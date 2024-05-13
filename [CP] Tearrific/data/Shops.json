@@ -1,0 +1,420 @@
+{
+    "Changes": [
+        // Add recipes to Seed Shop
+        {
+            "LogName": "Add basic tea recipes to SeedShop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Green_Tea_Recipe": {
+                    "ItemId": "(O)614",
+                    "ObjectInternalName": "Green Tea",
+                    "Price": 375,
+                    "isRecipe": true
+                },
+                "{{ModId}}_White_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_White_Tea",
+                    "Price": 500,
+                    "isRecipe": true
+                },
+                "{{ModId}}_Oolong_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Oolong_Tea",
+                    "Price": 625,
+                    "isRecipe": true
+                },
+                "{{ModId}}_Black_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Black_Tea",
+                    "Price": 750,
+                    "isRecipe": true
+                }
+            }
+        },
+        {
+            "LogName": "Add Cherry Blossom Green Tea recipe to SeedShop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Cherry_Blossom_Green_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Cherry_Blossom_Green_Tea",
+                    "Price": 625,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "HasMod |contains=wildflour.ateliercrops": true
+            }
+        },
+        {
+            "LogName": "Add Jasmine Green Tea recipe to SeedShop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Jasmine_Green_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Jasmine_Green_Tea",
+                    "Price": 750,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "Jasmine": "Cornucopia, WF, QLFG2"
+            }
+        },
+        {
+            "LogName": "Add Peony White Tea recipe to SeedShop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Peony_White_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Peony_White_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "Peony": "Cornucopia, QLFG2"
+            }
+        },
+        {
+            "LogName": "Add Lavender Black Tea recipe to SeedShop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Lavender_Black_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Lavender_Black_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "Lavender": "Cornucopia, WF, QLFG2, SM"
+            }
+        },
+        {
+            "LogName": "Add Rose Petal Black Tea recipe to SeedShop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Rose_Petal_Black_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Rose_Petal_Black_Tea",
+                    "Price": 2000,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "Rose": "Cornucopia, QLFG2"
+            }
+        },
+        // Add recipes to Saloon
+        {
+            "LogName": "Add basic tea recipes to Saloon",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Saloon",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Pomegranate_White_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Pomegranate_White_Tea",
+                    "Price": 1125,
+                    "isRecipe": true
+                },
+                "{{ModId}}_Peach_Oolong_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Peach_Oolong_Tea",
+                    "Price": 1125,
+                    "isRecipe": true
+                },
+                "{{ModId}}_Maple_Sugar_Black_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Maple_Sugar_Black_Tea",
+                    "Price": 1750,
+                    "isRecipe": true
+                },
+                "{{ModId}}_Strawberry_Black_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Strawberry_Black_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                }
+            }
+        },
+        {
+            "LogName": "Add Yuzu Green Tea recipe to Saloon",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Saloon",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Yuzu_Green_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Yuzu_Green_Tea",
+                    "Price": 625,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        {
+            "LogName": "Add Raspberry White Tea recipe to Saloon",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Saloon",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Raspberry_White_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Raspberry_White_Tea",
+                    "Price": 625,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "Raspberry": "Cornucopia, WF"
+            }
+        },
+        {
+            "LogName": "Add Pear White Tea recipe to Saloon",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Saloon",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Pear_White_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Pear_White_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true
+            }
+        },
+        {
+            "LogName": "Add Grapefruit White Tea recipe to Saloon",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Saloon",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Grapefruit_White_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Grapefruit_White_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        {
+            "LogName": "Add Apple Cinnamon Oolong Tea recipe to Saloon",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Saloon",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Apple_Cinnamon_Oolong_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Price": 1750,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "Cinnamon": "Cornucopia, WF"
+            }
+        },
+        // Add recipes to Animal Shop
+        {
+            "LogName": "Add basic tea recipes to AnimalShop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AnimalShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Honey_Matcha_Latte_Recipe": {
+                    "ItemId": "(O){{ModId}}_Honey_Matcha_Latte",
+                    "Price": 1500,
+                    "isRecipe": true
+                },
+                "{{ModId}}_Oolong_Milk_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Oolong_Milk_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                },
+                "{{ModId}}_Black_Milk_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Black_Milk_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                }
+            }
+        },
+        // Add recipes to Sandy
+        {
+            "LogName": "Add Coconut Cream White Tea recipe to Sandy",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Sandy",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Coconut_Cream_White_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Coconut_Cream_White_Tea",
+                    "Price": 1500,
+                    "isRecipe": true
+                }
+            }
+        },
+        {
+            "LogName": "Add Lychee Green Tea recipe to Sandy",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Sandy",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Lychee_Green_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Lychee_Green_Tea",
+                    "Price": 875,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Add recipes to Resort Bar
+        {
+            "LogName": "Add Mango Green Tea recipe to Resort Bar",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "ResortBar",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Mango_Green_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Mango_Green_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                }
+            }
+        },
+        {
+            "LogName": "Add Lemon Ginger Oolong Tea recipe to Resort Bar",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "ResortBar",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Lemon_Ginger_Oolong_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "Lemon": "Cornucopia, WF"
+            }
+        },
+        {
+            "LogName": "Add Creamsicle Oolong Tea recipe to Resort Bar",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "ResortBar",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Creamsicle_Oolong_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Creamsicle_Oolong_Tea",
+                    "Price": 1750,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "Vanilla": "Cornucopia, WF"
+            }
+        },
+        {
+            "LogName": "Add Papaya Oolong Tea recipe to Resort Bar",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "ResortBar",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Papaya_Oolong_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Papaya_Oolong_Tea",
+                    "Price": 1000,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        {
+            "LogName": "Add Passion Fruit Black Tea recipe to Resort Bar",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "ResortBar",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_Passion_Fruit_Black_Tea_Recipe": {
+                    "ItemId": "(O){{ModId}}_Passion_Fruit_Black_Tea",
+                    "Price": 1625,
+                    "isRecipe": true
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedCropsPackEnabled"
+            }
+        }
+    ]
+}

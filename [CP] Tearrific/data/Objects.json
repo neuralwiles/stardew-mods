@@ -1,0 +1,1466 @@
+{
+    "Changes": [
+        // Loose Leaf Teas Tilesheet
+        {
+            "LogName": "Load Loose Leaf Teas Tilesheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/LooseLeafTeas",
+            "FromFile": "assets/LooseLeafTeas.png"
+        },
+        // Teas Tilesheet
+        {
+            "LogName": "Load Teas Tilesheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Teas",
+            "FromFile": "assets/Teas.png"
+        },
+        // Replace the base game's Green Tea sprite with the Tearrific Green Tea sprite when enabled in the config
+        {
+            "LogName": "Replace Green Tea Sprite",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Teas.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 16
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 400,
+				"Width": 16,
+				"Height": 16
+			},
+            "When": {
+                "UseNewGreenTeaSprite": true
+            },
+            "Priority": "Late"
+		},
+        // Loose Leaf Tea Objects
+        {
+            "LogName": "Loose Leaf Tea Objects",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Loose_Leaf_Green_Tea": {
+                    "Name": "{{ModId}}_Loose_Leaf_Green_Tea",
+                    "DisplayName": "{{i18n:LooseLeaf.Green.Name}}",
+                    "Description": "{{i18n:LooseLeaf.Green.Description}}",
+                    "Price": 53,
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Texture": "Mods/{{ModId}}/LooseLeafTeas",
+                    "SpriteIndex": "0",
+                    "Edibility": -300,
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_green",
+                        "loose_leaf_tea_item",
+                        "tearrific_loose_leaf_tea_item"
+                    ]
+                },
+                "{{ModId}}_Loose_Leaf_White_Tea": {
+                    "Name": "{{ModId}}_Loose_Leaf_White_Tea",
+                    "DisplayName": "{{i18n:LooseLeaf.White.Name}}",
+                    "Description": "{{i18n:LooseLeaf.White.Description}}",
+                    "Price": 55,
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Texture": "Mods/{{ModId}}/LooseLeafTeas",
+                    "SpriteIndex": "1",
+                    "Edibility": -300,
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_sand",
+                        "loose_leaf_tea_item",
+                        "tearrific_loose_leaf_tea_item"
+                    ]
+                },
+                "{{ModId}}_Loose_Leaf_Oolong_Tea": {
+                    "Name": "{{ModId}}_Loose_Leaf_Oolong_Tea",
+                    "DisplayName": "{{i18n:LooseLeaf.Oolong.Name}}",
+                    "Description": "{{i18n:LooseLeaf.Oolong.Description}}",
+                    "Price": 63,
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Texture": "Mods/{{ModId}}/LooseLeafTeas",
+                    "SpriteIndex": "2",
+                    "Edibility": -300,
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_orange",
+                        "loose_leaf_tea_item",
+                        "tearrific_loose_leaf_tea_item"
+                    ]
+                },
+                "{{ModId}}_Loose_Leaf_Black_Tea": {
+                    "Name": "{{ModId}}_Loose_Leaf_Black_Tea",
+                    "DisplayName": "{{i18n:LooseLeaf.Black.Name}}",
+                    "Description": "{{i18n:LooseLeaf.Black.Description}}",
+                    "Price": 73,
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Texture": "Mods/{{ModId}}/LooseLeafTeas",
+                    "SpriteIndex": "3",
+                    "Edibility": -300,
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_brown",
+                        "loose_leaf_tea_item",
+                        "tearrific_loose_leaf_tea_item"
+                    ]
+                }
+            }
+        },
+        // Tea Objects
+        // Change the Type and Category of the base game Green Tea Object
+        {
+            "LogName": "Change Green Tea Object",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Fields": {
+				"614": {
+                    "Type": "Cooking",
+                    "Category": -7
+                }
+			}
+		},
+        // Basic Green Tea Objects
+        {
+            "LogName": "Basic Green Tea Objects",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Honey_Matcha_Latte": {
+                    "Name": "{{ModId}}_Honey_Matcha_Latte",
+                    "DisplayName": "{{i18n:Teas.HoneyMatchaLatte.Name}}",
+                    "Description": "{{i18n:Teas.HoneyMatchaLatte.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 305,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 1,
+                    "Edibility": 25,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.5,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_light_green",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                },
+                "{{ModId}}_Mango_Green_Tea": {
+                    "Name": "{{ModId}}_Mango_Green_Tea",
+                    "DisplayName": "{{i18n:Teas.MangoGreen.Name}}",
+                    "Description": "{{i18n:Teas.MangoGreen.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 201,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 2,
+                    "Edibility": 25,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.5,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_orange",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            }
+        },
+        // WF Cherry Blossom Green Tea Object
+        {
+            "LogName": "WF Cherry Blossom Green Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Cherry_Blossom_Green_Tea": {
+                    "Name": "{{ModId}}_Cherry_Blossom_Green_Tea",
+                    "DisplayName": "{{i18n:Teas.CherryBlossomGreen.Name}}",
+                    "Description": "{{i18n:Teas.CherryBlossomGreen.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 130,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 3,
+                    "Edibility": 7,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.5,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_light_pink",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "HasMod |contains=wildflour.ateliercrops": true
+            }
+        },
+        // Cornucopia/WF/QLFG2 Jasmine Green Tea Object
+        {
+            "LogName": "Cornucopia/WF/QLFG2 Jasmine Green Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Jasmine_Green_Tea": {
+                    "Name": "{{ModId}}_Jasmine_Green_Tea",
+                    "DisplayName": "{{i18n:Teas.JasmineGreen.Name}}",
+                    "Description": "{{i18n:Teas.JasmineGreen.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 135,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 4,
+                    "Edibility": 17,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.5,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_light_sand",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "Jasmine": "Cornucopia, WF, QLFG2"
+            }
+        },
+        // Cornucopia Lychee Green Tea Object
+        {
+            "LogName": "Cornucopia Lychee Green Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Lychee_Green_Tea": {
+                    "Name": "{{ModId}}_Lychee_Green_Tea",
+                    "DisplayName": "{{i18n:Teas.LycheeGreen.Name}}",
+                    "Description": "{{i18n:Teas.LycheeGreen.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 179,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 5,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.5,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_violet_red",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Cornucopia Yuzu Green Tea Object
+        {
+            "LogName": "Cornucopia Yuzu Green Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Yuzu_Green_Tea": {
+                    "Name": "{{ModId}}_Yuzu_Green_Tea",
+                    "DisplayName": "{{i18n:Teas.YuzuGreen.Name}}",
+                    "Description": "{{i18n:Teas.YuzuGreen.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 130,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 6,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.5,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_yellow",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Basic White Tea Objects
+        {
+            "LogName": "Basic White Tea Objects",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_White_Tea": {
+                    "Name": "{{ModId}}_White_Tea",
+                    "DisplayName": "{{i18n:Teas.White.Name}}",
+                    "Description": "{{i18n:Teas.White.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 110,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 7,
+                    "Edibility": 5,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.65,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_sand",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                },
+                "{{ModId}}_Coconut_Cream_White_Tea": {
+                    "Name": "{{ModId}}_Coconut_Cream_White_Tea",
+                    "DisplayName": "{{i18n:Teas.CoconutCreamWhite.Name}}",
+                    "Description": "{{i18n:Teas.CoconutCreamWhite.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 308,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 8,
+                    "Edibility": 35,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.65,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_light_sand",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                },
+                "{{ModId}}_Pomegranate_White_Tea": {
+                    "Name": "{{ModId}}_Pomegranate_White_Tea",
+                    "DisplayName": "{{i18n:Teas.PomegranateWhite.Name}}",
+                    "Description": "{{i18n:Teas.PomegranateWhite.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 215,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 9,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.65,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_pink",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            }
+        },
+        // Cornucopia/WF Raspberry White Tea Object
+        {
+            "LogName": "Cornucopia/WF Raspberry White Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Raspberry_White_Tea": {
+                    "Name": "{{ModId}}_Raspberry_White_Tea",
+                    "DisplayName": "{{i18n:Teas.RaspberryWhite.Name}}",
+                    "Description": "{{i18n:Teas.RaspberryWhite.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 127,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 10,
+                    "Edibility": 15,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.65,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_pink",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]
+                }
+            },
+            "When": {
+                "Raspberry": "Cornucopia, WF"
+            }
+        },
+        // Cornucopia/QLFG2 Peony White Tea Object
+        {
+            "LogName": "Cornucopia/QLFG2 Peony White Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Peony_White_Tea": {
+                    "Name": "{{ModId}}_Peony_White_Tea",
+                    "DisplayName": "{{i18n:Teas.PeonyWhite.Name}}",
+                    "Description": "{{i18n:Teas.PeonyWhite.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 182,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 11,
+                    "Edibility": 23,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.65,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_pink",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]
+                }
+            },
+            "When": {
+                "Peony": "Cornucopia, QLFG2"
+            }
+        },
+        // Cornucopia Pear White Tea Object
+        {
+            "LogName": "Cornucopia Pear White Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Pear_White_Tea": {
+                    "Name": "{{ModId}}_Pear_White_Tea",
+                    "DisplayName": "{{i18n:Teas.PearWhite.Name}}",
+                    "Description": "{{i18n:Teas.PearWhite.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 209,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 12,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.65,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_yellow_green",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true
+            }
+        },
+        // Cornucopia Grapefruit White Tea Object
+        {
+            "LogName": "Cornucopia Grapefruit White Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Grapefruit_White_Tea": {
+                    "Name": "{{ModId}}_Grapefruit_White_Tea",
+                    "DisplayName": "{{i18n:Teas.GrapefruitWhite.Name}}",
+                    "Description": "{{i18n:Teas.GrapefruitWhite.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 215,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 13,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.65,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_pink",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Basic Oolong Tea Objects
+        {
+            "LogName": "Basic Oolong Tea Objects",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Oolong_Tea": {
+                    "Name": "{{ModId}}_Oolong_Tea",
+                    "DisplayName": "{{i18n:Teas.Oolong.Name}}",
+                    "Description": "{{i18n:Teas.Oolong.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 127,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 14,
+                    "Edibility": 5,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.8,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_orange",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                },
+                "{{ModId}}_Oolong_Milk_Tea": {
+                    "Name": "{{ModId}}_Oolong_Milk_Tea",
+                    "DisplayName": "{{i18n:Teas.OolongMilk.Name}}",
+                    "Description": "{{i18n:Teas.OolongMilk.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 207,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 15,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.8,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_orange",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                },
+                "{{ModId}}_Peach_Oolong_Tea": {
+                    "Name": "{{ModId}}_Peach_Oolong_Tea",
+                    "DisplayName": "{{i18n:Teas.PeachOolong.Name}}",
+                    "Description": "{{i18n:Teas.PeachOolong.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 224,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 16,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.8,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_light_pink",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            }
+        },
+        // Cornucopia/WF Lemon Ginger Oolong Object
+        {
+            "LogName": "Cornucopia/WF Lemon Ginger Oolong Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Lemon_Ginger_Oolong_Tea": {
+                    "Name": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "DisplayName": "{{i18n:Teas.LemonGingerOolong.Name}}",
+                    "Description": "{{i18n:Teas.LemonGingerOolong.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 213,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 17,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.8,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_yellow",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "Lemon": "Cornucopia, WF"
+            }
+        },
+        // Cornucopia/WF Creamsicle Oolong Tea Object
+        {
+            "LogName": "Cornucopia/WF Creamsicle Oolong Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Creamsicle_Oolong_Tea": {
+                    "Name": "{{ModId}}_Creamsicle_Oolong_Tea",
+                    "DisplayName": "{{i18n:Teas.CreamsicleOolong.Name}}",
+                    "Description": "{{i18n:Teas.CreamsicleOolong.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 345,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 18,
+                    "Edibility": 25,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.8,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_orange",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "Vanilla": "Cornucopia, WF"
+            }
+        },
+        // Cornucopia Papaya Oolong Tea Object
+        {
+            "LogName": "Cornucopia Papaya Oolong Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Papaya_Oolong_Tea": {
+                    "Name": "{{ModId}}_Papaya_Oolong_Tea",
+                    "DisplayName": "{{i18n:Teas.PapayaOolong.Name}}",
+                    "Description": "{{i18n:Teas.PapayaOolong.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 218,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 19,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.8,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_orange",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Cornucopia/WF Apple Cinnamon Oolong Tea Object
+        {
+            "LogName": "Cornucopia/WF Apple Cinnamon Oolong Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Apple_Cinnamon_Oolong_Tea": {
+                    "Name": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "DisplayName": "{{i18n:Teas.AppleCinnamonOolong.Name}}",
+                    "Description": "{{i18n:Teas.AppleCinnamonOolong.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 344,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 20,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.8,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_red",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "Cinnamon": "Cornucopia, WF"
+            }
+        },
+        // Basic Black Tea Objects
+        {
+            "LogName": "Basic Black Tea Objects",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Black_Tea": {
+                    "Name": "{{ModId}}_Black_Tea",
+                    "DisplayName": "{{i18n:Teas.Black.Name}}",
+                    "Description": "{{i18n:Teas.Black.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 146,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 21,
+                    "Edibility": 5,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.95,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_brown",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                },
+                "{{ModId}}_Black_Milk_Tea": {
+                    "Name": "{{ModId}}_Black_Milk_Tea",
+                    "DisplayName": "{{i18n:Teas.BlackMilk.Name}}",
+                    "Description": "{{i18n:Teas.BlackMilk.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 218,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 22,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.95,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_brown",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                },
+                "{{ModId}}_Maple_Sugar_Black_Tea": {
+                    "Name": "{{ModId}}_Maple_Sugar_Black_Tea",
+                    "DisplayName": "{{i18n:Teas.MapleSugarBlack.Name}}",
+                    "Description": "{{i18n:Teas.MapleSugarBlack.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 355,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 23,
+                    "Edibility": 35,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.95,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_brown",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                },
+                "{{ModId}}_Strawberry_Black_Tea": {
+                    "Name": "{{ModId}}_Strawberry_Black_Tea",
+                    "DisplayName": "{{i18n:Teas.StrawberryBlack.Name}}",
+                    "Description": "{{i18n:Teas.StrawberryBlack.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 212,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 24,
+                    "Edibility": 25,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.95,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_red",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            }
+        },
+        // Cornucopia/WF/QLFG2/SM Lavender Black Tea Object
+        {
+            "LogName": "Cornucopia/WF/QLFG2/SM Lavender Black Tea Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Lavender_Black_Tea": {
+                    "Name": "{{ModId}}_Lavender_Black_Tea",
+                    "DisplayName": "{{i18n:Teas.LavenderBlack.Name}}",
+                    "Description": "{{i18n:Teas.LavenderBlack.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 185,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 25,
+                    "Edibility": 20,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.95,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_purple",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "Lavender": "Cornucopia, WF, QLFG2, SM"
+            }
+        },
+        // Cornucopia Passion Fruit Black Tea Object
+        {
+            "LogName": "Cornucopia Passion Fruit Black Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Passion_Fruit_Black_Tea": {
+                    "Name": "{{ModId}}_Passion_Fruit_Black_Tea",
+                    "DisplayName": "{{i18n:Teas.PassionFruitBlack.Name}}",
+                    "Description": "{{i18n:Teas.PassionFruitBlack.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 322,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 26,
+                    "Edibility": 25,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.95,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_pink",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedCropsPackEnabled"
+            }
+        },
+        // Cornucopia/QLFG2 Rose Petal Black Tea Object
+        {
+            "LogName": "Cornucopia/QLFG2 Rose Petal Black Tea Tea Object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Rose_Petal_Black_Tea": {
+                    "Name": "{{ModId}}_Rose_Petal_Black_Tea",
+                    "DisplayName": "{{i18n:Teas.RosePetalBlack.Name}}",
+                    "Description": "{{i18n:Teas.RosePetalBlack.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 399,
+                    "Texture": "Mods/{{ModId}}/Teas",
+                    "SpriteIndex": 27,
+                    "Edibility": 23,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 30.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.95,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
+                    "ContextTags": [
+                        "color_dark_pink",
+                        "tea_item",
+                        "tearrific_tea_item"
+                    ]    
+                }
+            },
+            "When": {
+                "Rose": "Cornucopia, QLFG2"
+            }
+        }
+    ]
+}

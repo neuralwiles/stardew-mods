@@ -1,0 +1,182 @@
+{
+    "Changes": [
+        // Load Oxidizer Tilesheet
+        {
+            "LogName": "Load Oxidizer Tilesheet",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Oxidizer",
+            "FromFile": "assets/Oxidizer_{{OxidizerSprite}}.png"
+        },
+        // Add Oxidizer Big Craftable
+        {
+            "LogName": "Oxidizer Big Craftable",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_Oxidizer": {
+                    "Name": "{{ModId}}_Oxidizer",
+                    "DisplayName": "{{i18n:Oxidizer.Name}}",
+                    "Description": "{{i18n:Oxidizer.Description}}",
+                    "Price": 50,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "Mods/{{ModId}}/Oxidizer",
+                    "SpriteIndex": 0,
+                    "ContextTags": null,
+                    "CustomFields": null
+                }
+            }
+        },
+        // Add crafting recipe for Oxidizer
+        {
+            "LogName": "Oxidizer Crafting Recipe",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModId}}_Oxidizer": "771 5 335 1/Home/{{ModId}}_Oxidizer/true/none/{{i18n:Oxidizer.Name}}"
+            }
+        },
+        // Add Oxidizer machine output rules
+        {
+            "LogName": "Output Rules for Oxidizer",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_Oxidizer": {
+                    "OutputRules": [
+                        {
+                            "Id": "{{ModId}}_Loose_Leaf_Green_Tea",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)815",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_Loose_Leaf_Green_Tea",
+                                    "ItemId": "(O){{ModId}}_Loose_Leaf_Green_Tea",
+                                    "MinStack": 1,
+                                    "CopyQuality": true,
+                                    "CopyPrice": true,
+                                    "PriceModifiers": [
+                                        {
+                                            "Modification": "Multiply",
+                                            "Amount": 1.05
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 20
+                        },
+                        {
+                            "Id": "{{ModId}}_Loose_Leaf_White_Tea",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Loose_Leaf_Green_Tea",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_Loose_Leaf_White_Tea",
+                                    "ItemId": "(O){{ModId}}_Loose_Leaf_White_Tea",
+                                    "MinStack": 1,
+                                    "CopyQuality": true,
+                                    "CopyPrice": true,
+                                    "PriceModifiers": [
+                                        {
+                                            "Modification": "Multiply",
+                                            "Amount": 1.05
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 20
+                        },
+                        {
+                            "Id": "{{ModId}}_Loose_Leaf_Oolong_Tea",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Loose_Leaf_White_Tea",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_Loose_Leaf_Oolong_Tea",
+                                    "ItemId": "(O){{ModId}}_Loose_Leaf_Oolong_Tea",
+                                    "MinStack": 1,
+                                    "CopyQuality": true,
+                                    "CopyPrice": true,
+                                    "PriceModifiers": [
+                                        {
+                                            "Modification": "Multiply",
+                                            "Amount": 1.15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 20
+                        },
+                        {
+                            "Id": "{{ModId}}_Loose_Leaf_Black_Tea",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Loose_Leaf_Oolong_Tea",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "{{ModId}}_Loose_Leaf_Black_Tea",
+                                    "ItemId": "(O){{ModId}}_Loose_Leaf_Black_Tea",
+                                    "MinStack": 1,
+                                    "CopyQuality": true,
+                                    "CopyPrice": true,
+                                    "PriceModifiers": [
+                                        {
+                                            "Modification": "Multiply",
+                                            "Amount": 1.15
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 20
+                        }
+                    ],
+                    "InvalidItemMessage": "{{i18n:Oxidizer.InvalidItemMessage}}",
+                    "InvalidCountMessage": "{{i18n:Oxidizer.InvalidCountMessage}}",
+                    "ShowNextIndexWhileWorking": true,
+                    "ShowNextIndexWhenReady": true,
+                    "LoadEffects": [
+                        {
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "steam",
+                                    "Delay": 0
+                                }
+                            ]
+                        }
+                    ]
+                    /*"WorkingEffects": [
+                        {
+                            "Condition": null,
+                            "Frames": [2],
+                            "Interval": 1000
+                        }
+                    ],
+                    "WorkingEffectChance": 1,
+                    "WobbleWhileWorking": false*/
+                }
+            }
+        }
+    ]
+}

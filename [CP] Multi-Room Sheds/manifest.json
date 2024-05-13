@@ -1,0 +1,11 @@
+{
+  "Name": "Multi-Room Sheds",
+  "Author": "neuralwiles",
+  "Version": "1.1.2",
+  "Description": "Replaces the Shed and Big Shed with multi-room versions. Adds the optional ability to cask in sheds.",
+  "UniqueID": "neuralwiles.MultiRoomSheds",
+  "UpdateKeys": [ "Nexus:23345" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

@@ -1,0 +1,69 @@
+{
+    // Translations for Config
+    "Config.TroughRecolor.Name": "饲料槽重新着色",
+    "Config.TroughRecolor.Description": "控制陆族箱饲料槽内部的重新着色。可以自动兼容（mod名字）： Earthy Recolor，More Elegant Town Interiors，Rustic Country Town Interiors，和Vibrant Pastoral Recolor，但你也可以手动选择着色。",
+
+    // Translations for American Green Tree Frog
+    "American_Green_Tree_Frog.Name": "美国树蛙",
+    "American_Green_Tree_Frog.Description": "这些勤劳的两栖动物朋友会为你找到蕨类植物和翡翠！",
+    
+    // Translations for Red-Eyed Tree Frog
+    "Red-Eyed_Tree_Frog.Name": "红眼树蛙",
+    "Red-Eyed_Tree_Frog.Description": "这些勤劳的两栖动物朋友会为你找到蕨类植物和红宝石！",
+    
+    // Translations for Clown Tree Frog
+    "Clown_Tree_Frog.Name": "萨拉亚库树蛙",
+    "Clown_Tree_Frog.Description": "这些勤劳的两栖动物朋友会为你找到蕨类植物和稀有种子！",
+    
+    // Translations for Blue Poison Dart Frog
+    "Blue_Poison_Dart_Frog.Name": "天蓝丛蛙",
+    "Blue_Poison_Dart_Frog.Description": "这些勤劳的两栖动物朋友会为你找到紫蘑菇和泪晶！",
+    
+    // Translations for Golden Poison Dart Frog
+    "Golden_Poison_Dart_Frog.Name": "金色箭毒蛙",
+    "Golden_Poison_Dart_Frog.Description": "这些勤劳的两栖动物朋友会为你找到红蘑菇和黄金矿石！",
+    
+    // Translations for Strawberry Poison Dart Frog
+    "Strawberry_Poison_Dart_Frog.Name": "草莓箭毒蛙",
+    "Strawberry_Poison_Dart_Frog.Description": "这些勤劳的两栖动物朋友会为你找到红蘑菇和草莓种子！",
+    
+    // Translations for Amazonian Poison Dart Frog
+    "Amazonian_Poison_Dart_Frog.Name": "亚马逊拉尼托梅亚毒箭蛙",
+    "Amazonian_Poison_Dart_Frog.Description": "这些勤劳的两栖动物朋友会为你找到红蘑菇和海蓝宝石！",
+    
+    // Translations for Purple Fluorescent Frog
+    "Purple_Fluorescent_Frog.Name": "紫色荧光青蛙",
+    "Purple_Fluorescent_Frog.Description": "这些勤劳的两栖动物朋友会为你找到紫蘑菇和紫水晶！",
+    
+    // Translations for Fire-Bellied Toad
+    "Fire-Bellied_Toad.Name": "东方铃蟾",
+    "Fire-Bellied_Toad.Description": "这些勤劳的两栖动物朋友会为你找到火水晶和红宝石！",
+    
+    // Translations for Pale Frog
+    "Pale_Frog.Name": "灰白蛙",
+    "Pale_Frog.Description": "这些勤劳的两栖动物朋友会为你找到地晶和稀有种子！",
+    
+    // Translations for Northern Glass Frog
+    "Northern_Glass_Frog.Name": "弗氏玻璃蛙",
+    "Northern_Glass_Frog.Description": "这些勤劳的两栖动物朋友会为你找到石英和绿宝石！",
+    
+    // Translations for Desert Rain Frog
+    "Desert_Rain_Frog.Name": "大足短头蛙",
+    "Desert_Rain_Frog.Description": "这些勤劳的两栖动物朋友会为你找到仙人掌果子和彩虹贝壳！",
+    
+    // Translations for Vietnamese Mossy Frog
+    "Vietnamese_Mossy_Frog.Name": "苔藓蛙",
+    "Vietnamese_Mossy_Frog.Description": "这些勤劳的两栖动物朋友会为你找到苔藓和长满苔藓的种子！",
+    
+    // Translations for Amazon Milk Frog
+    "Amazon_Milk_Frog.Name": "金眼树蛙",
+    "Amazon_Milk_Frog.Description": "这些勤劳的两栖动物朋友会为你找到牛奶！",
+    
+    // Translations for Terrarium
+    "Terrarium.Name": "陆族箱",
+    "Terrarium.Description": "为饲养爬行动物和两栖动物提供一个健康的环境。",
+
+    // Translations for Big Terrarium
+    "Big_Terrarium.Name": "大陆族箱",
+    "Big_Terrarium.Description": "为饲养爬行动物和两栖动物提供一个健康的环境。"
+}

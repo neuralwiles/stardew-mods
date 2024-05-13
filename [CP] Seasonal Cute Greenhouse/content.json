@@ -1,0 +1,12 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    // Load in greenhouse map seasonally
+    {
+      "LogName": "Load greenhouse map",
+      "Action": "Load",
+      "Target": "Maps/Greenhouse",
+      "FromFile": "assets/Greenhouse_{{Season}}.tmx",
+    }
+  ]
+}

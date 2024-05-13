@@ -1,0 +1,213 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+		"Enable Casking": {
+			"Description": "Enables casking in the farm cave.",
+			"AllowValues": "true, false",
+			"Default": "false"
+		}
+	},
+  "Changes": [
+    // Load in custom tilesheet
+    {
+      "LogName": "Load custom tilesheet",
+      "Action": "Load",
+      "Target": "Maps/neuralwiles_leaves",
+      "FromFile": "assets/neuralwiles_leaves.png",
+    },
+    // Load in farm cave maps
+    {
+      "LogName": "Load Farm Cave map",
+      "Action": "Load",
+      "Target": "Maps/FarmCave",
+      "FromFile": "assets/FarmCave.tmx",
+    },
+    {
+      "LogName": "Load Hidden Spring map",
+      "Action": "Load",
+      "Target": "Maps/{{ModID}}_HiddenSpring",
+      "FromFile": "assets/FarmCave_HiddenSpring.tmx",
+    },
+    // Add Hidden Spring custom location
+    {
+      "LogName": "Create Hidden Spring custom location",
+      "Action": "EditData",
+      "Target": "Data/Locations" ,
+      "Entries": {
+        "{{ModId}}_HiddenSpring": {
+          "CreateOnLoad": {
+            "DisplayName": "Hidden Spring",
+            "DefaultArrivalTile": {
+              "X": 5,
+              "Y": 14
+            },
+            "MapPath": "Maps/{{ModId}}_HiddenSpring"
+          }
+        }
+      }
+    },
+    // Add Farm Cave fishing data
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [ "FarmCave", "Fish" ],
+      "Entries": {
+        "{{ModID}}_FarmCavePond_GreenAlgae": {
+          "Chance": 1.0,
+          "Season": null,
+          "FishAreaId": null,
+          "BobberPosition": null,
+          "PlayerPosition": null,
+          "MinFishingLevel": 0,
+          "MinDistanceFromShore": 0,
+          "MaxDistanceFromShore": -1,
+          "ApplyDailyLuck": false,
+          "CuriosityLureBuff": -1.0,
+          "CatchLimit": -1,
+          "IsBossFish": false,
+          "SetFlagOnCatch": null,
+          "RequireMagicBait": false,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": true,
+          "ChanceModifiers": null,
+          "ChanceModifierMode": 0,
+          "ChanceBoostPerLuckLevel": 0.05,
+          "UseFishCaughtSeededRandom": true,
+          "Condition": null,
+          "Id": "(O)153",
+          "ItemId": "(O)153",
+          "RandomItemId": null,
+          "MaxItems": null,
+          "MinStack": -1,
+          "MaxStack": -1,
+          "Quality": -1,
+          "ObjectInternalName": null,
+          "ObjectDisplayName": null,
+          "ToolUpgradeLevel": -1,
+          "IsRecipe": false,
+          "StackModifiers": null,
+          "StackModifierMode": 0,
+          "QualityModifiers": null,
+          "QualityModifierMode": 0,
+          "ModData": null,
+          "PerItemCondition": null
+        },
+        "{{ModID}}_FarmCavePond_WhiteAlgae": {
+          "Chance": 1.0,
+          "Season": null,
+          "FishAreaId": null,
+          "BobberPosition": null,
+          "PlayerPosition": null,
+          "MinFishingLevel": 0,
+          "MinDistanceFromShore": 0,
+          "MaxDistanceFromShore": -1,
+          "ApplyDailyLuck": false,
+          "CuriosityLureBuff": -1.0,
+          "CatchLimit": -1,
+          "IsBossFish": false,
+          "SetFlagOnCatch": null,
+          "RequireMagicBait": false,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": true,
+          "ChanceModifiers": null,
+          "ChanceModifierMode": 0,
+          "ChanceBoostPerLuckLevel": 0.05,
+          "UseFishCaughtSeededRandom": true,
+          "Condition": null,
+          "Id": "(O)157",
+          "ItemId": "(O)157",
+          "RandomItemId": null,
+          "MaxItems": null,
+          "MinStack": -1,
+          "MaxStack": -1,
+          "Quality": -1,
+          "ObjectInternalName": null,
+          "ObjectDisplayName": null,
+          "ToolUpgradeLevel": -1,
+          "IsRecipe": false,
+          "StackModifiers": null,
+          "StackModifierMode": 0,
+          "QualityModifiers": null,
+          "QualityModifierMode": 0,
+          "ModData": null,
+          "PerItemCondition": null
+        },
+        "{{ModID}}_FarmCavePond_CaveJelly": {
+          "Chance": 0.1,
+          "Season": null,
+          "FishAreaId": null,
+          "BobberPosition": null,
+          "PlayerPosition": null,
+          "MinFishingLevel": 0,
+          "MinDistanceFromShore": 0,
+          "MaxDistanceFromShore": -1,
+          "ApplyDailyLuck": true,
+          "CuriosityLureBuff": -1.0,
+          "CatchLimit": -1,
+          "IsBossFish": false,
+          "SetFlagOnCatch": null,
+          "RequireMagicBait": false,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": true,
+          "ChanceModifiers": null,
+          "ChanceModifierMode": 0,
+          "ChanceBoostPerLuckLevel": 0.05,
+          "UseFishCaughtSeededRandom": true,
+          "Condition": null,
+          "Id": "(O)CaveJelly",
+          "ItemId": "(O)CaveJelly",
+          "RandomItemId": null,
+          "MaxItems": null,
+          "MinStack": -1,
+          "MaxStack": -1,
+          "Quality": -1,
+          "ObjectInternalName": null,
+          "ObjectDisplayName": null,
+          "ToolUpgradeLevel": -1,
+          "IsRecipe": false,
+          "StackModifiers": null,
+          "StackModifierMode": 0,
+          "QualityModifiers": null,
+          "QualityModifierMode": 0,
+          "ModData": null,
+          "PerItemCondition": null
+        }
+      }
+    },
+    // Add farm cave minecart
+    {
+      "LogName": "Add Farm Cave minecart",
+      "Action": "EditData",
+      "Target": "Data/Minecarts",
+      "TargetField": [ "Default", "Destinations" ],
+      "Entries": {
+        "{{ModID}}_HiddenSpringFarmCave": {
+            "Id": "{{ModID}}_HiddenSpringFarmCave",
+            "DisplayName": "[LocationName Farm] Cave",
+            "Condition": "LOCATION_ACCESSIBLE FarmCave",
+            "TargetLocation": "FarmCave",
+            "TargetTile": {
+              "X": 18,
+              "Y": 6
+            },
+            "TargetDirection": "down"
+        }
+      }
+    },
+    // Allow casking when config is enabled
+		{
+			"LogName": "Enable casking in Farm Cave.",
+			"Action": "EditMap",
+			"Target": "Maps/FarmCave",
+			"MapProperties": {
+				"CanCaskHere": "T"
+			},
+			"When": {
+				"Enable Casking": "true"
+			}
+		},
+  ]
+}

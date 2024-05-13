@@ -1,0 +1,16 @@
+{
+  "Name": "Seasonal Cute Greenhouse",
+  "Author": "neuralwiles",
+  "Version": "1.0.0",
+  "Description": "A seasonal greenhouse replacement with ample space for crops and trees.",
+  "UniqueID": "neuralwiles.SeasonalCuteGreenhouse",
+  "UpdateKeys": [ "Nexus:23650" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "DaisyNiko.Tilesheets"
+    }
+  ]
+}

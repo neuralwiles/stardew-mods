@@ -1,0 +1,12 @@
+{
+  "Name": "Tearrific",
+  "Author": "neuralwiles",
+  "Version": "1.0.0",
+  "Description": "Adds more advanced tea processing to the game.",
+  "UniqueID": "neuralwiles.Tearrific",
+  "UpdateKeys": [ "Nexus:" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": []
+}

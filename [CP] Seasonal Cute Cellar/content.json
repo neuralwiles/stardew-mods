@@ -1,0 +1,142 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "Cellar Size": {
+      "Description": "Determines the size of the cellar. Choose between the smaller, single room version or the larger version with a second room.",
+      "AllowValues": "Small, Large",
+      "Default": "Small"
+    },
+    "Spa": {
+      "Description": "Determines whether the spa room is added on the right side of the cellar.",
+      "AllowValues": "true, false",
+      "Default": "true"
+    },
+    "Cellar Decor": {
+      "Description": "Determines the decor style for the cellar. Choose between a cozy reading lounge, an indoor camping picnic, or an empty cellar with no furniture.",
+      "AllowValues": "Lounge, Camping, Empty",
+      "Default": "Lounge"
+    },
+    "Floor Style": {
+      "Description": "Determines the style of the cellar floor in the upper righthand corner of the map. Default option is Automatic, which has a tile patch with the Lounge style, a dirt patch with the Camping style, and only grass with the Empty style. You can override these by selecting a specific style here.",
+      "AllowValues": "Automatic, Tile, Dirt, Grass",
+      "Default": "Automatic"
+    },
+    "Sewer Access": {
+      "Description": "When enabled, adds a trapdoor with access to the sewer to right side of the cellar.",
+      "AllowValues": "true, false",
+      "Default": "true"
+    },
+    "Camping String Lights": {
+      "Description": "Determines which lights to use when the Camping decor is chosen. The cat string lights can be beige (default), pink, blue, or disabled.",
+      "AllowValues": "Beige, Pink, Blue, Disabled",
+      "Default": "Beige"
+    }
+  },
+  "Changes": [
+    // Load custom cellar tilesheet
+    {
+      "LogName": "Load custom cellar tilesheet",
+      "Action": "Load",
+      "Target": "Maps/neuralwiles_indoor",
+      "FromFile": "assets/neuralwiles_indoor.png"
+    },
+    // Register floor pillows on custom tilesheet as stools
+    {
+      "LogName": "Register custom chair tiles",
+      "Action": "EditData",
+      "Target": "Data/ChairTiles",
+      "Entries": {
+        "neuralwiles_indoor/6/5": "1/1/opposite/stool/-1/-1/false",
+        "neuralwiles_indoor/7/5": "1/1/opposite/stool/-1/-1/false",
+        "neuralwiles_indoor/8/5": "1/1/opposite/stool/-1/-1/false"
+      }
+    },
+    // Load in empty cellar map
+    {
+      "LogName": "Load empty cellar map",
+      "Action": "EditMap",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Cellar_{{Cellar Size}}_{{Season}}.tmx",
+    },
+    // Apply decor style to cellar if applicable
+    {
+      "LogName": "Apply decor to cellar",
+      "Action": "EditMap",
+      "PatchMode": "Overlay",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Decor/{{Cellar Decor}}_{{Season}}.tmx",
+      "When": {
+        "Cellar Decor": "Lounge, Camping"
+      }
+    },
+    // Add spa room on the right side of the map when enabled
+    {
+      "LogName": "Add spa room",
+      "Action": "EditMap",
+      "PatchMode": "Replace",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Spa_{{Season}}.tmx",
+      "ToArea": {
+        "X": 25,
+        "Y": 2,
+        "Width": 12,
+        "Height": 14
+      },
+      "When": {
+        "Spa": "true"
+      }
+    },
+    // Add trapdoor with sewer access when enabled
+    {
+      "LogName": "Add sewer trapdoor",
+      "Action": "EditMap",
+      "PatchMode": "Overlay",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/SewerAccess.tmx",
+      "ToArea": {
+        "X": 24,
+        "Y": 13,
+        "Width": 1,
+        "Height": 1
+      },
+      "When": {
+        "Sewer Access": "true"
+      }
+    },
+    // Apply cat string lights in the desired color when using the Camping style
+    {
+      "LogName": "Add string lights to Camping style cellar",
+      "Action": "EditMap",
+      "PatchMode": "Overlay",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Lights/{{Camping String Lights}}.tmx",
+      "ToArea": {
+        "X": 17,
+        "Y": 3,
+        "Width": 6,
+        "Height": 2
+      },
+      "When": {
+        "Cellar Decor": "Camping",
+        "Camping String Lights": "Beige, Pink, Blue"
+      }
+    },
+    // Apply floor style overrides when a manual option is selected
+    {
+      "LogName": "Override floor style when a manual option is selected",
+      "Action": "EditMap",
+      "PatchMode": "Overlay",
+      "Target": "Maps/Cellar",
+      "FromFile": "assets/Floor/{{Floor Style}}_{{Season}}.tmx",
+      "ToArea": {
+        "X": 16,
+        "Y": 7,
+        "Width": 9,
+        "Height": 6
+      },
+      "When": {
+        "Floor Style": "Tile, Dirt, Grass"
+      }
+    }
+  ]
+}

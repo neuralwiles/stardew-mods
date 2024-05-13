@@ -1,0 +1,62 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    "Wall Color": {
+      "Description": "Determines the wall color for the barns.",
+      "AllowValues": "Vanilla, Blue, Brown, Chocolate, Cream, Green, GreyBlue, Lavender, Orange, PaleGold, PastelPink, Pink, Purple, Red, RoseGold, Rust, SeaGreen, Teal, White",
+      "Default": "Vanilla"
+    }
+  },
+  "Changes": [
+    // Load in barn maps
+    {
+      "LogName": "Load Barn map",
+      "Action": "EditMap",
+      "Target": "Maps/Barn",
+      "FromFile": "assets/Barn.tmx",
+    },
+    {
+      "LogName": "Load Barn2 map",
+      "Action": "EditMap",
+      "Target": "Maps/Barn2",
+      "FromFile": "assets/Barn2.tmx",
+    },
+    {
+      "LogName": "Load Barn3 map",
+      "Action": "EditMap",
+      "Target": "Maps/Barn3",
+      "FromFile": "assets/Barn3.tmx",
+    },
+    // Load in coop maps
+    {
+      "LogName": "Load Coop map",
+      "Action": "EditMap",
+      "Target": "Maps/Coop",
+      "FromFile": "assets/Coop.tmx",
+    },
+    {
+      "LogName": "Load Coop2 map",
+      "Action": "EditMap",
+      "Target": "Maps/Coop2",
+      "FromFile": "assets/Coop2.tmx",
+    },
+    {
+      "LogName": "Load Coop3 map",
+      "Action": "EditMap",
+      "Target": "Maps/Coop3",
+      "FromFile": "assets/Coop3.tmx",
+    },
+    // Replace wall color to color specified in the config
+    {
+      "LogName": "Change barn wall color if not vanilla",
+      "Action": "EditImage",
+      "PatchMode": "Overlay",
+      "Target": "Maps/coopTiles",
+      "FromFile": "assets/Wall_{{Wall Color}}.png",
+      "Priority": "Late",
+      "When": {
+        "Wall Color": "Blue, Brown, Chocolate, Cream, Green, GreyBlue,Lavender, Orange, PaleGold, PastelPink, Pink, Purple, Red, RoseGold, Rust, SeaGreen, Teal, White"
+      }
+    }
+  ]
+}

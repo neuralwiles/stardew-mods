@@ -1,0 +1,69 @@
+{
+    // Translations for Config
+    "Config.TroughRecolor.Name": "Trough Recolor",
+    "Config.TroughRecolor.Description": "Controlla il colore interno della mangiatoia del terrario. La compatilibiltà con Earthy Recolor, More Elegant Town Interiors, Rustic Country Town Interiors, e Vibrant Pastoral Recolor, è automatica ma puoi anche selezionare il colore manualmente.",
+
+    // Translations for American Green Tree Frog
+    "American_Green_Tree_Frog.Name": "Raganella Verde Americana",
+    "American_Green_Tree_Frog.Description": "Questi operosi amici anfibi ti troveranno felci e giada!",
+    
+    // Translations for Red-Eyed Tree Frog
+    "Red-Eyed_Tree_Frog.Name": "Raganella dagli Occhi Rossi",
+    "Red-Eyed_Tree_Frog.Description": "Questi operosi amici anfibi ti troveranno felci e rubini!",
+    
+    // Translations for Clown Tree Frog
+    "Clown_Tree_Frog.Name": "Sarayacu Raganella",
+    "Clown_Tree_Frog.Description": "Questi operosi amici anfibi ti troveranno felci e semi rare!",
+    
+    // Translations for Blue Poison Dart Frog
+    "Blue_Poison_Dart_Frog.Name": "Rana Freccia Blu",
+    "Blue_Poison_Dart_Frog.Description": "Questi operosi amici anfibi ti troveranno funghi viole e lacrime ghiacciate!",
+    
+    // Translations for Golden Poison Dart Frog
+    "Golden_Poison_Dart_Frog.Name": "Rana Dorata",
+    "Golden_Poison_Dart_Frog.Description": "Questi operosi amici anfibi ti troveranno funghi rosse e oro grezzo!",
+    
+    // Translations for Strawberry Poison Dart Frog
+    "Strawberry_Poison_Dart_Frog.Name": "Rana Freccia alla Fragola",
+    "Strawberry_Poison_Dart_Frog.Description": "Questi operosi amici anfibi ti troveranno funghi rosse e semi di fragole!",
+    
+    // Translations for Amazonian Poison Dart Frog
+    "Amazonian_Poison_Dart_Frog.Name": "Rana Freccia Amazonica",
+    "Amazonian_Poison_Dart_Frog.Description": "Questi operosi amici anfibi ti troveranno funghi rosse e acquamarine!",
+    
+    // Translations for Purple Fluorescent Frog
+    "Purple_Fluorescent_Frog.Name": "Rana Arlecchino Viola",
+    "Purple_Fluorescent_Frog.Description": "Questi operosi amici anfibi ti troveranno funghi viole e ametista!",
+    
+    // Translations for Fire-Bellied Toad
+    "Fire-Bellied_Toad.Name": "Ululone dal Ventre di Fuoco",
+    "Fire-Bellied_Toad.Description": "Questi operosi amici anfibi ti troveranno quarzo di fuoco e rubini!",
+    
+    // Translations for Pale Frog
+    "Pale_Frog.Name": "Rana Pallida",
+    "Pale_Frog.Description": "Questi operosi amici anfibi ti troveranno cristalli della terra e semi rare!",
+    
+    // Translations for Northern Glass Frog
+    "Northern_Glass_Frog.Name": "Rana di Vetro",
+    "Northern_Glass_Frog.Description": "Questi operosi amici anfibi ti troveranno quarzo e smeraldi!",
+    
+    // Translations for Desert Rain Frog
+    "Desert_Rain_Frog.Name": "Rana della Pioggia",
+    "Desert_Rain_Frog.Description": "Questi operosi amici anfibi ti troveranno fici d'India and conchiglie iridee!",
+    
+    // Translations for Vietnamese Mossy Frog
+    "Vietnamese_Mossy_Frog.Name": "Rana Muschiata Vietnamita",
+    "Vietnamese_Mossy_Frog.Description": "Questi operosi amici anfibi ti troveranno muschio e semi di muschio!",
+    
+    // Translations for Amazon Milk Frog
+    "Amazon_Milk_Frog.Name": "Rana del Latte Amazzonica",
+    "Amazon_Milk_Frog.Description": "Questi operosi amici anfibi ti troveranno latte!",
+    
+    // Translations for Terrarium
+    "Terrarium.Name": "Terrario",
+    "Terrarium.Description": "Fornisce un ambiente sano per l'allevamento di rettili e anfibi.",
+
+    // Translations for Big Terrarium
+    "Big_Terrarium.Name": "Terrario Grande",
+    "Big_Terrarium.Description": "Fornisce un ambiente sano per l'allevamento di rettili e anfibi."
+}

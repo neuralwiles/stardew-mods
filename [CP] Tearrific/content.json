@@ -1,0 +1,620 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "ExcludeFromPerfection": {
+            "Description": "Exclude items added by this mod from the shipping requirements for perfection.",
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "General"
+        },
+        "OxidizerSprite": {
+            "Description": "Which sprite to use for the Oxidizer: one which matches the vanilla game, one which matches Gwen's Medieval Craftables, or one which matches Elegant Craftables. Defaults to the vanilla sprite.",
+            "AllowValues": "Vanilla, Medieval, Elegant",
+            "Default": "Vanilla",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "General"
+        },
+        "UseNewGreenTeaSprite": {
+            "Description": "Replace the base game's Green Tea sprite with one that matches this mod.",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "General"
+        },
+        "JasmineCompatibility": {
+            "Description": "Which jasmine item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the jasmine-related recipe.",
+            "AllowValues": "Auto, None, Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2",
+            "Default": "Auto",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "Mod Compatibility"
+        },
+        "RaspberryCompatibility": {
+            "Description": "Which raspberry item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the raspberry-related recipe.",
+            "AllowValues": "Auto, None, Cornucopia - More Crops, Wildflour's Atelier Goods - Forager",
+            "Default": "Auto",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "Mod Compatibility"
+        },
+        "PeonyCompatibility": {
+            "Description": "Which peony item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the peony-related recipe.",
+            "AllowValues": "Auto, None, Cornucopia - More Flowers (Extended Flowers), Quaint Living - Flower Garden 2",
+            "Default": "Auto",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "Mod Compatibility"
+        },
+        "LemonCompatibility": {
+            "Description": "Which lemon item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the lemon-related recipe.",
+            "AllowValues": "Auto, None, Cornucopia - More Crops (Extended Trees), Wildflour's Atelier Goods - Forager",
+            "Default": "Auto",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "Mod Compatibility"
+        },
+        "VanillaCompatibility": {
+            "Description": "Which vanilla item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the vanilla-related recipes.",
+            "AllowValues": "Auto, None, Cornucopia - More Crops, Wildflour's Atelier Goods - Forager",
+            "Default": "Auto",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "Mod Compatibility"
+        },
+        "CinnamonCompatibility": {
+            "Description": "Which cinnamon item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the cinnamon-related recipe.",
+            "AllowValues": "Auto, None, Cornucopia - More Crops (Herbs), Wildflour's Atelier Goods - Forager",
+            "Default": "Auto",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "Mod Compatibility"
+        },
+        "LavenderCompatibility": {
+            "Description": "Which lavender item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the lavender-related recipe.",
+            "AllowValues": "Auto, None, Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2, Lumisteria Serene Meadow",
+            "Default": "Auto",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "Mod Compatibility"
+        },
+        "RoseCompatibility": {
+            "Description": "Which rose item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the rose-related recipe.",
+            "AllowValues": "Auto, None, Cornucopia - More Flowers, Quaint Living - Flower Garden 2",
+            "Default": "Auto",
+            "AllowBlank": false,
+            "AllowMultiple": false,
+            "Section": "Mod Compatibility"
+        },
+    },
+    "DynamicTokens": [
+        // Manual and auto mod compatibility support
+        
+        // Jasmine can be from Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2
+        {
+            // Disable if set to Auto and none of the relevant mods are installed
+            "Name": "Jasmine",
+            "Value": "Disabled",
+            "When": {
+                "JasmineCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreFlowers": false,
+                "HasMod |contains=wildflour.ateliercrops": false,
+                "HasMod |contains=PC.CP.QL.FlowerGarden2": false
+            }
+        },
+        {
+            // Enable QLFG2 compatibility if Auto is selected
+            "Name": "Jasmine",
+            "Value": "QLFG2",
+            "When": {
+                "JasmineCompatibility": "Auto",
+                "HasMod |contains=PC.CP.QL.FlowerGarden2": true
+            }
+        },
+        {
+            // Enable WF compatibility if Auto is selected
+            "Name": "Jasmine",
+            "Value": "WF",
+            "When": {
+                "JasmineCompatibility": "Auto",
+                "HasMod |contains=wildflour.ateliercrops": true
+            }
+        },
+        {
+            // Enable Cornucopia compatibility if Auto is selected
+            "Name": "Jasmine",
+            "Value": "Cornucopia",
+            "When": {
+                "JasmineCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreFlowers": true,
+                "HasFlag": "Cornucopia.MoreFlowers_ExtendedFlowersPackEnabled"
+            }
+        },
+        {
+            // Disable jasmine when manually selected
+            "Name": "Jasmine",
+            "Value": "Disabled",
+            "When": {
+                "JasmineCompatibility": "None"
+            }
+        },
+        {
+            // Enable QLFG2 compatibility when manually selected
+            "Name": "Jasmine",
+            "Value": "QLFG2",
+            "When": {
+                "JasmineCompatibility": "Quaint Living - Flower Garden 2"
+            }
+        },
+        {
+            // Enable WF compatibility when manually selected
+            "Name": "Jasmine",
+            "Value": "WF",
+            "When": {
+                "JasmineCompatibility": "Wildflour's Atelier Goods - Forager"
+            }
+        },
+        {
+            // Enable CF compatibility when manually selected
+            "Name": "Jasmine",
+            "Value": "Cornucopia",
+            "When": {
+                "JasmineCompatibility": "Cornucopia - More Flowers (Extended Flowers)"
+            }
+        },
+
+        // Raspberry can be from Cornucopia - More Crops, Wildflour's Atelier Goods - Forager
+        {
+            // Disable if set to Auto and none of the relevant mods are installed
+            "Name": "Raspberry",
+            "Value": "Disabled",
+            "When": {
+                "RaspberryCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreCrops": false,
+                "HasMod |contains=wildflour.ateliercrops": false
+            }
+        },
+        {
+            // Enable WF compatibility if Auto is selected
+            "Name": "Raspberry",
+            "Value": "WF",
+            "When": {
+                "RaspberryCompatibility": "Auto",
+                "HasMod |contains=wildflour.ateliercrops": true
+            }
+        },
+        {
+            // Enable Cornucopia compatibility if Auto is selected
+            "Name": "Raspberry",
+            "Value": "Cornucopia",
+            "When": {
+                "RaspberryCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreCrops": true
+            }
+        },
+        {
+            // Disable raspberry when manually selected
+            "Name": "Raspberry",
+            "Value": "Disabled",
+            "When": {
+                "RaspberryCompatibility": "None"
+            }
+        },
+        {
+            // Enable WF compatibility when manually selected
+            "Name": "Raspberry",
+            "Value": "WF",
+            "When": {
+                "RaspberryCompatibility": "Wildflour's Atelier Goods - Forager"
+            }
+        },
+        {
+            // Enable Cornucopia compatibility when manually selected
+            "Name": "Raspberry",
+            "Value": "Cornucopia",
+            "When": {
+                "RaspberryCompatibility": "Cornucopia - More Crops"
+            }
+        },
+
+        // Peony can be from Cornucopia - More Flowers (Extended Flowers), Quaint Living - Flower Garden 2
+        {
+            // Disable if set to Auto and none of the relevant mods are installed
+            "Name": "Peony",
+            "Value": "Disabled",
+            "When": {
+                "PeonyCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreCrops": false,
+                "HasMod |contains=wildflour.ateliercrops": false
+            }
+        },
+        {
+            // Enable QLFG2 compatibility if Auto is selected
+            "Name": "Peony",
+            "Value": "QLFG2",
+            "When": {
+                "PeonyCompatibility": "Auto",
+                "HasMod |contains=PC.CP.QL.FlowerGarden2": true
+            }
+        },
+        {
+            // Enable Cornucopia compatibility if Auto is selected
+            "Name": "Peony",
+            "Value": "Cornucopia",
+            "When": {
+                "PeonyCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreFlowers": true,
+                "HasFlag": "Cornucopia.MoreFlowers_ExtendedFlowersPackEnabled"
+            }
+        },
+        {
+            // Disable peony when manually selected
+            "Name": "Peony",
+            "Value": "Disabled",
+            "When": {
+                "PeonyCompatibility": "None"
+            }
+        },
+        {
+            // Enable QLFG2 compatibility when manually selected
+            "Name": "Peony",
+            "Value": "QLFG2",
+            "When": {
+                "PeonyCompatibility": "Quaint Living - Flower Garden 2"
+            }
+        },
+        {
+            // Enable Cornucopia compatibility when manually selected
+            "Name": "Peony",
+            "Value": "Cornucopia",
+            "When": {
+                "PeonyCompatibility": "Cornucopia - More Flowers (Extended Flowers)"
+            }
+        },
+
+        // Lemon can be from Cornucopia - More Crops (Extended Trees), Wildflour's Atelier Goods - Forager
+        {
+            // Disable if set to Auto and none of the relevant mods are installed
+            "Name": "Lemon",
+            "Value": "Disabled",
+            "When": {
+                "LemonCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreCrops": false,
+                "HasMod |contains=wildflour.ateliercrops": false
+            }
+        },
+        {
+            // Enable WF compatibility if Auto is selected
+            "Name": "Lemon",
+            "Value": "WF",
+            "When": {
+                "LemonCompatibility": "Auto",
+                "HasMod |contains=wildflour.ateliercrops": true
+            }
+        },
+        {
+            // Enable Cornucopia compatibility if Auto is selected
+            "Name": "Lemon",
+            "Value": "Cornucopia",
+            "When": {
+                "LemonCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        {
+            // Disable lemon when manually selected
+            "Name": "Lemon",
+            "Value": "Disabled",
+            "When": {
+                "LemonCompatibility": "None"
+            }
+        },
+        {
+            // Enable WF compatibility when manually selected
+            "Name": "Lemon",
+            "Value": "WF",
+            "When": {
+                "LemonCompatibility": "Wildflour's Atelier Goods - Forager"
+            }
+        },
+        {
+            // Enable Cornucopia compatibility when manually selected
+            "Name": "Lemon",
+            "Value": "Cornucopia",
+            "When": {
+                "LemonCompatibility": "Cornucopia - More Crops (Extended Trees)"
+            }
+        },
+
+        // Vanilla can be from Cornucopia - More Crops, Wildflour's Atelier Goods - Forager
+        {
+            // Disable if set to Auto and none of the relevant mods are installed
+            "Name": "Vanilla",
+            "Value": "Disabled",
+            "When": {
+                "VanillaCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreCrops": false,
+                "HasMod |contains=wildflour.ateliercrops": false
+            }
+        },
+        {
+            // Enable WF compatibility if Auto is selected
+            "Name": "Vanilla",
+            "Value": "WF",
+            "When": {
+                "VanillaCompatibility": "Auto",
+                "HasMod |contains=wildflour.ateliercrops": true
+            }
+        },
+        {
+            // Enable Cornucopia compatibility if Auto is selected
+            "Name": "Vanilla",
+            "Value": "Cornucopia",
+            "When": {
+                "VanillaCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreCrops": true
+            }
+        },
+        {
+            // Disable vanilla when manually selected
+            "Name": "Vanilla",
+            "Value": "Disabled",
+            "When": {
+                "VanillaCompatibility": "None"
+            }
+        },
+        {
+            // Enable WF compatibility when manually selected
+            "Name": "Vanilla",
+            "Value": "WF",
+            "When": {
+                "VanillaCompatibility": "Wildflour's Atelier Goods - Forager"
+            }
+        },
+        {
+            // Enable Cornucopia compatibility when manually selected
+            "Name": "Vanilla",
+            "Value": "Cornucopia",
+            "When": {
+                "VanillaCompatibility": "Cornucopia - More Crops"
+            }
+        },
+
+        // Cinnamon can be from Cornucopia - More Crops (Herbs), Wildflour's Atelier Goods - Forager
+        {
+            // Disable if set to Auto and none of the relevant mods are installed
+            "Name": "Cinnamon",
+            "Value": "Disabled",
+            "When": {
+                "CinnamonCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreCrops": false,
+                "HasMod |contains=wildflour.ateliercrops": false
+            }
+        },
+        {
+            // Enable WF compatibility if Auto is selected
+            "Name": "Cinnamon",
+            "Value": "WF",
+            "When": {
+                "CinnamonCompatibility": "Auto",
+                "HasMod |contains=wildflour.ateliercrops": true
+            }
+        },
+        {
+            // Enable Cornucopia compatibility if Auto is selected
+            "Name": "Cinnamon",
+            "Value": "Cornucopia",
+            "When": {
+                "CinnamonCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_HerbsPackEnabled"
+            }
+        },
+        {
+            // Disable cinnamon when manually selected
+            "Name": "Cinnamon",
+            "Value": "Disabled",
+            "When": {
+                "CinnamonCompatibility": "None"
+            }
+        },
+        {
+            // Enable WF compatibility when manually selected
+            "Name": "Cinnamon",
+            "Value": "WF",
+            "When": {
+                "CinnamonCompatibility": "Wildflour's Atelier Goods - Forager"
+            }
+        },
+        {
+            // Enable Cornucopia compatibility when manually selected
+            "Name": "Cinnamon",
+            "Value": "Cornucopia",
+            "When": {
+                "CinnamonCompatibility": "Cornucopia - More Crops (Herbs)"
+            }
+        },
+
+        // Lavender can be from Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2, Lumisteria Serene Meadow
+        {
+            // Disable if set to Auto and none of the relevant mods are installed
+            "Name": "Lavender",
+            "Value": "Disabled",
+            "When": {
+                "LavenderCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreFlowers": false,
+                "HasMod |contains=wildflour.ateliercrops": false,
+                "HasMod |contains=Lumisteria.SereneMeadow": false,
+                "HasMod |contains=PC.CP.QL.FlowerGarden2": false
+            }
+        },
+        {
+            // Enable SM compatibility if Auto is selected
+            "Name": "Lavender",
+            "Value": "SM",
+            "When": {
+                "LavenderCompatibility": "Auto",
+                "HasMod |contains=Lumisteria.SereneMeadow": true
+            }
+        },
+        {
+            // Enable QLFG2 compatibility if Auto is selected
+            "Name": "Lavender",
+            "Value": "QLFG2",
+            "When": {
+                "LavenderCompatibility": "Auto",
+                "HasMod |contains=PC.CP.QL.FlowerGarden2": true
+            }
+        },
+        {
+            // Enable WF compatibility if Auto is selected
+            "Name": "Lavender",
+            "Value": "WF",
+            "When": {
+                "LavenderCompatibility": "Auto",
+                "HasMod |contains=wildflour.ateliercrops": true
+            }
+        },
+        {
+            // Enable Cornucopia compatibility if Auto is selected
+            // TODO: Check for Extended Flowers mail flag
+            "Name": "Lavender",
+            "Value": "Cornucopia",
+            "When": {
+                "LavenderCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreFlowers": true,
+                "HasFlag": "Cornucopia.MoreFlowers_ExtendedFlowersPackEnabled"
+            }
+        },
+        {
+            // Disable lavender when manually selected
+            "Name": "Lavender",
+            "Value": "Disabled",
+            "When": {
+                "LavenderCompatibility": "None"
+            }
+        },
+        {
+            // Enable SM compatibility when manually selected
+            "Name": "Lavender",
+            "Value": "SM",
+            "When": {
+                "LavenderCompatibility": "Lumisteria Serene Meadow"
+            }
+        },
+        {
+            // Enable QLFG2 compatibility when manually selected
+            "Name": "Lavender",
+            "Value": "QLFG2",
+            "When": {
+                "LavenderCompatibility": "Quaint Living - Flower Garden 2"
+            }
+        },
+        {
+            // Enable WF compatibility when manually selected
+            "Name": "Lavender",
+            "Value": "WF",
+            "When": {
+                "LavenderCompatibility": "Wildflour's Atelier Goods - Forager"
+            }
+        },
+        {
+            // Enable CF compatibility when manually selected
+            "Name": "Lavender",
+            "Value": "Cornucopia",
+            "When": {
+                "LavenderCompatibility": "Cornucopia - More Flowers (Extended Flowers)"
+            }
+        },
+
+        // Rose can be from Cornucopia - More Flowers, Quaint Living - Flower Garden 2
+        {
+            // Disable if set to Auto and none of the relevant mods are installed
+            "Name": "Rose",
+            "Value": "Disabled",
+            "When": {
+                "RoseCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreFlowers": false,
+                "HasMod |contains=PC.CP.QL.FlowerGarden2": false
+            }
+        },
+        {
+            // Enable QLFG2 compatibility if Auto is selected
+            "Name": "Rose",
+            "Value": "QLFG2",
+            "When": {
+                "RoseCompatibility": "Auto",
+                "HasMod |contains=PC.CP.QL.FlowerGarden2": true
+            }
+        },
+        {
+            // Enable Cornucopia compatibility if Auto is selected
+            "Name": "Rose",
+            "Value": "Cornucopia",
+            "When": {
+                "RoseCompatibility": "Auto",
+                "HasMod |contains=Cornucopia.MoreFlowers": true
+            }
+        },
+        {
+            // Disable rose when manually selected
+            "Name": "Rose",
+            "Value": "Disabled",
+            "When": {
+                "RoseCompatibility": "None"
+            }
+        },
+        {
+            // Enable QLFG2 compatibility when manually selected
+            "Name": "Rose",
+            "Value": "QLFG2",
+            "When": {
+                "RoseCompatibility": "Quaint Living - Flower Garden 2"
+            }
+        },
+        {
+            // Enable Cornucopia compatibility when manually selected
+            "Name": "Rose",
+            "Value": "Cornucopia",
+            "When": {
+                "RoseCompatibility": "Cornucopia - More Flowers"
+            }
+        }
+    ],
+    "Changes": [
+        {
+            "LogName": "Include Oxidizer file",
+            "Action": "Include",
+            "FromFile": "data/Oxidizer.json"
+        },
+        {
+            "LogName": "Include Objects file",
+            "Action": "Include",
+            "FromFile": "data/Objects.json"
+        },
+        {
+            "LogName": "Include CookingRecipes file",
+            "Action": "Include",
+            "FromFile": "data/CookingRecipes.json"
+        },
+        {
+            "LogName": "Include Shops file",
+            "Action": "Include",
+            "FromFile": "data/Shops.json"
+        },
+        {
+            "LogName": "Include Mail file",
+            "Action": "Include",
+            "FromFile": "data/Mail.json"
+        },
+        {
+            "LogName": "Include NPCGiftTastes file",
+            "Action": "Include",
+            "FromFile": "data/NPCGiftTastes.json"
+        }
+    ]
+}

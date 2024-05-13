@@ -1,0 +1,48 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"Enable Casking": {
+			"Description": "Enables casking in the sheds.",
+			"AllowValues": "true, false",
+			"Default": "false"
+		}
+	},
+	"Changes": [
+		// Load in shed maps
+		{
+			"LogName": "Load Shed map",
+			"Action": "Load",
+			"Target": "Maps/Shed",
+			"FromFile": "assets/Shed.tmx",
+		},
+		{
+			"LogName": "Load Big Shed map",
+			"Action": "Load",
+			"Target": "Maps/Shed2",
+			"FromFile": "assets/Shed2.tmx",
+		},
+		// Enable casking
+		{
+			"LogName": "Enable casking in Shed.",
+			"Action": "EditMap",
+			"Target": "Maps/Shed",
+			"MapProperties": {
+				"CanCaskHere": "T"
+			},
+			"When": {
+				"Enable Casking": "true"
+			}
+		},
+		{
+			"LogName": "Enable casking in Big Shed.",
+			"Action": "EditMap",
+			"Target": "Maps/Shed2",
+			"MapProperties": {
+				"CanCaskHere": "T"
+			},
+			"When": {
+				"Enable Casking": "true"
+			}
+		}
+	]
+}

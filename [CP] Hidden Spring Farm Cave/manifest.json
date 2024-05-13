@@ -1,0 +1,16 @@
+{
+  "Name": "Hidden Spring Farm Cave",
+  "Author": "neuralwiles",
+  "Version": "1.0.0",
+  "Description": "A farm cave replacement with space for growing crops, mine cart access... and a secret!",
+  "UniqueID": "neuralwiles.HiddenSpringFarmCave",
+  "UpdateKeys": [ "Nexus:23736" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "DaisyNiko.Tilesheets"
+    }
+  ]
+}

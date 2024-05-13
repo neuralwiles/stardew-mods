@@ -1,0 +1,147 @@
+{
+    // Translations for Config
+    "Config.Section.General.Name": "General",
+
+    "Config.ExcludeFromPerfection.Name": "Exclude from Perfection",
+    "Config.ExcludeFromPerfection.Description": "Exclude items added by this mod from the requirements for perfection and full shipment.",
+
+    "Config.OxidizerSprite.Name": "Oxidizer Sprite",
+    "Config.OxidizerSprite.Description": "Which sprite to use for the Oxidizer: one which matches the vanilla game, one which matches Gwen's Medieval Craftables, or one which matches Elegant Craftables. Defaults to the vanilla sprite.",
+
+    "Config.UseNewGreenTeaSprite.Name": "Use New Green Tea Sprite",
+    "Config.UseNewGreenTeaSprite.Description": "Replace the base game's Green Tea sprite with one that matches this mod.",
+
+    "Config.Section.ModCompatibility.Name": "Mod Compatibility",
+    "Config.Section.ModCompatibility.Description": "Compatibility options for custom crop and flower mods.",
+
+    "Config.JasmineCompatibility.Name": "Jasmine Compatibility",
+    "Config.JasmineCompatibility.Description": "Which jasmine item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the jasmine-related recipe.",
+
+    "Config.RaspberryCompatibility.Name": "Raspberry Compatibility",
+    "Config.RaspberryCompatibility.Description": "Which raspberry item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the raspberry-related recipe.",
+
+    "Config.PeonyCompatibility.Name": "Peony Compatibility",
+    "Config.PeonyCompatibility.Description": "Which peony item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the peony-related recipe.",
+
+    "Config.LemonCompatibility.Name": "Lemon Compatibility",
+    "Config.LemonCompatibility.Description": "Which lemon item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the lemon-related recipe.",
+
+    "Config.VanillaCompatibility.Name": "Vanilla Compatibility",
+    "Config.VanillaCompatibility.Description": "Which vanilla item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the vanilla-related recipe.",
+
+    "Config.CinnamonCompatibility.Name": "Cinnamon Compatibility",
+    "Config.CinnamonCompatibility.Description": "Which cinnamon item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the cinnamon-related recipe.",
+
+    "Config.LavenderCompatibility.Name": "Lavender Compatibility",
+    "Config.LavenderCompatibility.Description": "Which lavender item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the lavender-related recipe.",
+
+    "Config.RoseCompatibility.Name": "Rose Compatibility",
+    "Config.RoseCompatibility.Description": "Which rose item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the rose-related recipe.",
+
+    // Translations for Oxidizer
+    "Oxidizer.Name": "Oxidizer",
+    "Oxidizer.Description": "Used to oxidize tea leaves into various loose leaf teas.",
+    "Oxidizer.InvalidItemMessage": "This can't be oxidized.",
+    "Oxidizer.InvalidCountMessage": "More ingredients are needed.",
+
+    // Translations for Oxidizer Recipe Mail
+    "OxidizerRecipeMail.Name": "Process Your Tea Leaves!",
+    "OxidizerRecipeMail.Text": "@, ^^ I know I wrote to you about how to cultivate tea bushes on your farm, but I forgot to mention that you can also process your tea leaves into various kinds of loose leaf tea. Loose leaf tea can be brewed into all sorts of tasty drinks, so give it a try! Here's a recipe for an oxidizer to get you started.^^ - Caroline",
+
+    // Translations for Loose Leaf Teas
+    "LooseLeaf.Green.Name": "Loose Leaf Green Tea",
+    "LooseLeaf.Green.Description": "The least processed type of tea, containing the most antioxidants.",
+
+    "LooseLeaf.White.Name": "Loose Leaf White Tea",
+    "LooseLeaf.White.Description": "A delicate, lightly processed tea made from young tea buds.",
+
+    "LooseLeaf.Oolong.Name": "Loose Leaf Oolong Tea",
+    "LooseLeaf.Oolong.Description": "A partially oxidized tea which can have a wide variety of flavors based on the preparation and degree of oxidation.",
+
+    "LooseLeaf.Black.Name": "Loose Leaf Black Tea",
+    "LooseLeaf.Black.Description": "A fully oxidized tea with a robust flavor and high caffeine content.",
+
+    // Translations for Teas
+    "Teas.Green.Name": "Green Tea",
+
+    "Teas.HoneyMatchaLatte.Name": "Honey Matcha Latte",
+    "Teas.HoneyMatchaLatte.Description": "A delicious, creamy blend of matcha green tea, honey, and milk.",
+
+    "Teas.MangoGreen.Name": "Mango Green Tea",
+    "Teas.MangoGreen.Description": "Green tea mixed with the tropical taste of mango.",
+
+    "Teas.CherryBlossomGreen.Name": "Cherry Blossom Green Tea",
+    "Teas.CherryBlossomGreen.Description": "Green tea steeped with cherry blossom petals. A taste of spring!",
+
+    "Teas.JasmineGreen.Name": "Jasmine Green Tea",
+    "Teas.JasmineGreen.Description": "A fragrant and comforting blend of green tea and jasmine.",
+
+    "Teas.LycheeGreen.Name": "Lychee Green Tea",
+    "Teas.LycheeGreen.Description": "Green tea infused with the sweet and complex bouquet of lychee.",
+
+    "Teas.YuzuGreen.Name": "Yuzu Green Tea",
+    "Teas.YuzuGreen.Description": "Citrussy and bright, this green tea is infused with dried yuzu peels.",
+
+    "Teas.White.Name": "White Tea",
+    "Teas.White.Description": "A delicate and rare tea with low caffiene content.",
+
+    "Teas.CoconutCreamWhite.Name": "Coconut Cream White Tea",
+    "Teas.CoconutCreamWhite.Description": "Gentle and inviting, this tropical white tea blend is extra comforting.",
+
+    "Teas.PomegranateWhite.Name": "Pomegranate White Tea",
+    "Teas.PomegranateWhite.Description": "A white tea infused with the bright and tart flavor of fresh pomegranate.",
+
+    "Teas.RaspberryWhite.Name": "Raspberry White Tea",
+    "Teas.RaspberryWhite.Description": "This tea combines the delicate taste of white tea with a burst of tangy raspberry flavor.",
+
+    "Teas.PeonyWhite.Name": "Peony White Tea",
+    "Teas.PeonyWhite.Description": "A fragrant, smooth white tea with a light, floral aroma.",
+
+    "Teas.PearWhite.Name": "Pear White Tea",
+    "Teas.PearWhite.Description": "A fruit-filled ode to the light, crisp flavors of fresh pears.",
+
+    "Teas.GrapefruitWhite.Name": "Grapefruit White Tea",
+    "Teas.GrapefruitWhite.Description": "White tea brightened by the clear citrus notes of grapefruit.",
+
+    "Teas.Oolong.Name": "Oolong Tea",
+    "Teas.Oolong.Description": "Renowned for its delicate florality, nuanced earthiness and pleasant sweetness.",
+
+    "Teas.OolongMilk.Name": "Oolong Milk Tea",
+    "Teas.OolongMilk.Description": "The perfect balance of creaminess and strong tea flavor!",
+
+    "Teas.PeachOolong.Name": "Peach Oolong Tea",
+    "Teas.PeachOolong.Description": "This oolong tea blend has a rich woodsy flavor with notes of ripe peaches and sweet honey.",
+
+    "Teas.LemonGingerOolong.Name": "Lemon Ginger Oolong Tea",
+    "Teas.LemonGingerOolong.Description": "Delicious and soothing, this tea is perfect for when you're feeling under the weather.",
+
+    "Teas.CreamsicleOolong.Name": "Creamsicle Oolong Tea",
+    "Teas.CreamsicleOolong.Description": "This oolong blend is infused with  nostalgic orange and vanilla flavors reminiscent of a favorite childhood treat.",
+
+    "Teas.PapayaOolong.Name": "Papaya Oolong Tea",
+    "Teas.PapayaOolong.Description": " This fruit-filled blend evokes island flavors for a tropical treat any time of year.",
+
+    "Teas.AppleCinnamonOolong.Name": "Apple Cinnamon Oolong Tea",
+    "Teas.AppleCinnamonOolong.Description": "The perfect drink to curl up with on a cold winter day!",
+
+    "Teas.Black.Name": "Black Tea",
+    "Teas.Black.Description": "Stronger in flavor than other teas and has the caffiene content to match. A great pick-me-up!",
+
+    "Teas.BlackMilk.Name": "Black Milk Tea",
+    "Teas.BlackMilk.Description": "This classic milk tea is sweet, creamy, and delicious.",
+
+    "Teas.MapleSugarBlack.Name": "Maple Sugar Black Tea",
+    "Teas.MapleSugarBlack.Description": "The comforting and sweet flavors of fall.",
+
+    "Teas.StrawberryBlack.Name": "Strawberry Black Tea",
+    "Teas.StrawberryBlack.Description": "This black tea features the naturally sweet taste of strawberries. A little bit of spring all year round!",
+
+    "Teas.LavenderBlack.Name": "Lavender Black Tea",
+    "Teas.LavenderBlack.Description": "Calming and aromatic, this black tea blended with lavender will soothe your worries away.",
+
+    "Teas.PassionFruitBlack.Name": "Passion Fruit Black Tea",
+    "Teas.PassionFruitBlack.Description": "A subtly sweet and tart blend of black tea and passion fruit to get you in a tropical state of mind.",
+
+    "Teas.RosePetalBlack.Name": "Rose Petal Black Tea",
+    "Teas.RosePetalBlack.Description": "A romantic and indulgent blend of strong black tea and fragrant rose petals."
+}

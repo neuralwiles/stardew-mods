@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        // Create Oxidizer Recipe Mail
+        {
+            "LogName": "Create Oxidizer Recipe Mail",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModId}}_OxidizerRecipeMail": "{{i18n:OxidizerRecipeMail.Text}} %item craftingRecipe {{ModId}}_Oxidizer %%[#]{{i18n:OxidizerRecipeMail.Name}}"
+            }
+        },
+        // Send Oxidizer Recipe Mail using a Trigger Action
+        {
+            "LogName": "Send Oxidizer Recipe Mail",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_OxidizerRecipe_Trigger": {
+                    "Id": "{{ModId}}_OxidizerRecipe_Trigger",
+                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current Tea Sapling",
+                    "Trigger": "DayEnding",
+                    "Action": "AddMail Current {{ModId}}_OxidizerRecipeMail"
+                }
+            }
+        }
+    ]
+}

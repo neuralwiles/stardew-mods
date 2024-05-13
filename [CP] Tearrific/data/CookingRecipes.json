@@ -1,0 +1,358 @@
+{
+    "Changes": [
+        // Basic Green Tea Recipes
+        {
+            "Log": "Basic Green Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "Green Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1/10 10/614 1/null/{{i18n:Teas.Green.Name}}",
+                "{{ModId}}_Honey_Matcha_Latte": "{{ModId}}_Loose_Leaf_Green_Tea 1 340 1 -6 1/10 10/{{ModId}}_Honey_Matcha_Latte 1/null/{{i18n:Teas.MatchaLatte.Name}}",
+                "{{ModId}}_Mango_Green_Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1 834 1/10 10/{{ModId}}_Mango_Green_Tea 1/null/{{i18n:Teas.MangoGreen.Name}}"
+            }
+        },
+        // WF Cherry Blossom Green Tea Recipe
+        {
+            "Log": "WF Cherry Blossom Green Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Cherry_Blossom_Green_Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1 wildflour.ateliercrops_cherryblossoms 1/10 10/{{ModId}}_Cherry_Blossom_Green_Tea 1/null/{{i18n:Teas.CherryBlossomGreen.Name}}"
+            },
+            "When": {
+                "HasMod |contains=wildflour.ateliercrops": true
+            }
+        },
+        // Cornucopia/WF/QLFG2 Jasmine Green Tea Recipe
+        {
+            "Log": "Cornucopia Jasmine Green Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Jasmine_Green_Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1 Cornucopia_Jasmine 1/10 10/{{ModId}}_Jasmine_Green_Tea 1/null/{{i18n:Teas.JasmineGreen.Name}}"
+            },
+            "When": {
+                "Jasmine": "Cornucopia"
+            }
+        },
+        {
+            "Log": "WF Jasmine Green Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Jasmine_Green_Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1 wildflour.ateliercrops_jasmine 1/10 10/{{ModId}}_Jasmine_Green_Tea 1/null/{{i18n:Teas.JasmineGreen.Name}}"
+            },
+            "When": {
+                "Jasmine": "WF"
+            }
+        },
+        {
+            "Log": "QLFG2 Jasmine Green Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Jasmine_Green_Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1 QL_Jasmine 1/10 10/{{ModId}}_Jasmine_Green_Tea 1/null/{{i18n:Teas.JasmineGreen.Name}}"
+            },
+            "When": {
+                "Jasmine": "QLFG2"
+            }
+        },
+        // Cornucopia Lychee Green Tea Recipe
+        {
+            "Log": "Cornucopia Lychee Green Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Lychee_Green_Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1 Cornucopia_Lychee 1/10 10/{{ModId}}_Lychee_Green_Tea 1/null/{{i18n:Teas.LycheeGreen.Name}}"
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Cornucopia Yuzu Green Tea Recipe
+        {
+            "Log": "Cornucopia Yuzu Green Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Yuzu_Green_Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1 Cornucopia_Yuzu 1/10 10/{{ModId}}_Yuzu_Green_Tea 1/null/{{i18n:Teas.YuzuGreen.Name}}"
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+
+        // Basic White Tea Recipes
+        {
+            "Log": "Basic White Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_White_Tea": "{{ModId}}_Loose_Leaf_White_Tea 1/10 10/{{ModId}}_White_Tea 1/null/{{i18n:Teas.White.Name}}",
+                "{{ModId}}_Coconut_Cream_White_Tea": "{{ModId}}_Loose_Leaf_White_Tea 1 88 1 -6 1/10 10/{{ModId}}_Coconut_Cream_White_Tea 1/null/{{i18n:Teas.CoconutCreamWhite.Name}}",
+                "{{ModId}}_Pomegranate_White_Tea": "{{ModId}}_Loose_Leaf_White_Tea 1 637 1/10 10/{{ModId}}_Pomegranate_White_Tea 1/null/{{i18n:Teas.PomegranateWhite.Name}}"
+            }
+        },
+        // Cornucopia/WF Raspberry White Tea Recipe
+        {
+            "Log": "Cornucopia Raspberry White Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Raspberry_White_Tea": "{{ModId}}_Loose_Leaf_White_Tea 1 Cornucopia_Raspberry 1/10 10/{{ModId}}_Raspberry_White_Tea 1/null/{{i18n:Teas.RaspberryWhite.Name}}"
+            },
+            "When": {
+                "Raspberry": "Cornucopia"
+            }
+        },
+        {
+            "Log": "WF Raspberry White Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Raspberry_White_Tea": "{{ModId}}_Loose_Leaf_White_Tea 1 wildflour.ateliercrops_raspberry 1/10 10/{{ModId}}_Raspberry_White_Tea 1/null/{{i18n:Teas.RaspberryWhite.Name}}"
+            },
+            "When": {
+                "Raspberry": "WF"
+            }
+        },
+        // Cornucopia/QLFG2 Peony White Tea Recipe
+        {
+            "Log": "Cornucopia Peony White Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Peony_White_Tea": "{{ModId}}_Loose_Leaf_White_Tea 1 Cornucopia_Peony 1/10 10/{{ModId}}_Peony_White_Tea 1/null/{{i18n:Teas.PeonyWhite.Name}}"
+            },
+            "When": {
+                "Peony": "Cornucopia"
+            }
+        },
+        {
+            "Log": "WF Peony White Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Peony_White_Tea": "{{ModId}}_Loose_Leaf_White_Tea 1 QL_Peony 1/10 10/{{ModId}}_Peony_White_Tea 1/null/{{i18n:Teas.PeonyWhite.Name}}"
+            },
+            "When": {
+                "Peony": "QLFG2"
+            }
+        },
+        // Cornucopia Pear White Tea Recipe
+        {
+            "Log": "Cornucopia Pear White Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Pear_White_Tea": "{{ModId}}_Loose_Leaf_White_Tea 1 Cornucopia_Pear 1/10 10/{{ModId}}_Pear_White_Tea 1/null/{{i18n:Teas.PearWhite.Name}}"
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true
+            }
+        },
+        // Cornucopia Grapefruit White Tea Recipe
+        {
+            "Log": "Cornucopia Grapefruit White Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Grapefruit_White_Tea": "{{ModId}}_Loose_Leaf_White_Tea 1 Cornucopia_Grapefruit 1/10 10/{{ModId}}_Grapefruit_White_Tea 1/null/{{i18n:Teas.GrapefruitWhite.Name}}"
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+
+        // Basic Oolong Tea Recipes
+        {
+            "Log": "Basic Oolong Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Oolong_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1/10 10/{{ModId}}_Oolong_Tea 1/null/{{i18n:Teas.Oolong.Name}}",
+                "{{ModId}}_Oolong_Milk_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1 -6 1/10 10/{{ModId}}_Oolong_Milk_Tea 1/null/{{i18n:Teas.OolongMilk.Name}}",
+                "{{ModId}}_Peach_Oolong_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1 636 1/10 10/{{ModId}}_Peach_Oolong_Tea 1/null/{{i18n:Teas.PeachOolong.Name}}"
+            }
+        },
+        // Cornucopia/WF Lemon Ginger Oolong Tea Recipe
+        {
+            "Log": "Cornucopia Lemon Ginger Oolong Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Lemon_Ginger_Oolong_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1 Cornucopia_Lemon 1 829 1/10 10/{{ModId}}_Lemon_Ginger_Oolong_Tea 1/null/{{i18n:Teas.LemonGingerOolong.Name}}"
+            },
+            "When": {
+                "Lemon": "Cornucopia"
+            }
+        },
+        {
+            "Log": "WF Lemon Ginger Oolong Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Lemon_Ginger_Oolong_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1 wildflour.ateliercrops_lemon 1 829 1/10 10/{{ModId}}_Lemon_Ginger_Oolong_Tea 1/null/{{i18n:Teas.LemonGingerOolong.Name}}"
+            },
+            "When": {
+                "Lemon": "WF"
+            }
+        },
+        // Cornucopia/WF Creamsicle Oolong Tea Recipe
+        {
+            "Log": "Cornucopia Creamsicle Oolong Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Creamsicle_Oolong_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1 635 1 Cornucopia_Vanilla 1/10 10/{{ModId}}_Creamsicle_Oolong_Tea 1/null/{{i18n:Teas.CreamsicleOolong.Name}}"
+            },
+            "When": {
+                "Vanilla": "Cornucopia"
+            }
+        },
+        {
+            "Log": "WF Creamsicle Oolong Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Creamsicle_Oolong_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1 635 1 wildflour.ateliercrops_vanilla 1/10 10/{{ModId}}_Creamsicle_Oolong_Tea 1/null/{{i18n:Teas.CreamsicleOolong.Name}}"
+            },
+            "When": {
+                "Vanilla": "WF"
+            }
+        },
+        // Cornucopia Papaya Oolong Tea Recipe
+        {
+            "Log": "Cornucopia Papaya Oolong Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Papaya_Oolong_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1 Cornucopia_Papaya 1/10 10/{{ModId}}_Papaya_Oolong_Tea 1/null/{{i18n:Teas.PapayaOolong.Name}}"
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Cornucopia/WF Apple Cinnamon Oolong Tea Recipe
+        {
+            "Log": "Cornucopia Apple Cinnamon Oolong Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Apple_Cinnamon_Oolong_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1 613 1 Cornucopia_CinnamonSticks 1/10 10/{{ModId}}_Apple_Cinnamon_Oolong_Tea 1/null/{{i18n:Teas.AppleCinnamonOolong.Name}}"
+            },
+            "When": {
+                "Cinnamon": "Cornucopia"
+            }
+        },
+        {
+            "Log": "WF Apple Cinnamon Oolong Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Apple_Cinnamon_Oolong_Tea": "{{ModId}}_Loose_Leaf_Oolong_Tea 1 613 1 wildflour.ateliercrops_cinnamon 1/10 10/{{ModId}}_Apple_Cinnamon_Oolong_Tea 1/null/{{i18n:Teas.AppleCinnamonOolong.Name}}"
+            },
+            "When": {
+                "Cinnamon": "WF"
+            }
+        },
+
+        // Basic Black Tea Recipes
+        {
+            "Log": "Basic Black Tea Recipes",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1/10 10/{{ModId}}_Black_Tea 1/null/{{i18n:Teas.Black.Name}}",
+                "{{ModId}}_Black_Milk_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 -6 1/10 10/{{ModId}}_Black_Milk_Tea 1/null/{{i18n:Teas.BlackMilk.Name}}",
+                "{{ModId}}_Maple_Sugar_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 724 1 245 1/10 10/{{ModId}}_Maple_Sugar_Black_Tea 1/null/{{i18n:Teas.MapleSugarBlack.Name}}",
+                "{{ModId}}_Strawberry_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 400 1/10 10/{{ModId}}_Strawberry_Black_Tea 1/null/{{i18n:Teas.StrawberryBlack.Name}}"
+            }
+        },
+        // Cornucopia/WF/QLFG2/SM Lavender Black Tea Recipe
+        {
+            "Log": "Cornucopia Lavender Black Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Lavender_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 Cornucopia_Lavender 1/10 10/{{ModId}}_Lavender_Black_Tea 1/null/{{i18n:Teas.LavenderBlack.Name}}"
+            },
+            "When": {
+                "Lavender": "Cornucopia"
+            }
+        },
+        {
+            "Log": "WF Lavender Black Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Lavender_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 wildflour.ateliercrops_lavender 1/10 10/{{ModId}}_Lavender_Black_Tea 1/null/{{i18n:Teas.LavenderBlack.Name}}"
+            },
+            "When": {
+                "Lavender": "WF"
+            }
+        },
+        {
+            "Log": "QLFG2 Lavender Black Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Lavender_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 QL_Lavender 1/10 10/{{ModId}}_Lavender_Black_Tea 1/null/{{i18n:Teas.LavenderBlack.Name}}"
+            },
+            "When": {
+                "Lavender": "QLFG2"
+            }
+        },
+        {
+            "Log": "SM Lavender Black Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Lavender_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 Lumisteria.SereneMeadow_ButterflyLavender 1/10 10/{{ModId}}_Lavender_Black_Tea 1/null/{{i18n:Teas.LavenderBlack.Name}}"
+            },
+            "When": {
+                "Lavender": "SM"
+            }
+        },
+        // Cornucopia Passion Fruit Black Tea Recipe
+        {
+            "Log": "Cornucopia Passion Fruit Black Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Passion_Fruit_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 Cornucopia_PassionFruit 1/10 10/{{ModId}}_Passion_Fruit_Black_Tea 1/null/{{i18n:Teas.PassionFruitBlack.Name}}"
+            },
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedCropsPackEnabled"
+            }
+        },
+        // Cornucopia/QLFG2 Rose Petal Black Tea Recipe
+        {
+            "Log": "Cornucopia Rose Petal Black Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Rose_Petal_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 Cornucopia_Rose 1/10 10/{{ModId}}_Rose_Petal_Black_Tea 1/null/{{i18n:Teas.RosePetalBlack.Name}}"
+            },
+            "When": {
+                "Rose": "Cornucopia"
+            }
+        },
+        {
+            "Log": "QLFG2 Rose Petal Black Tea Recipe",
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "{{ModId}}_Rose_Petal_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 QL_Rose 1/10 10/{{ModId}}_Rose_Petal_Black_Tea 1/null/{{i18n:Teas.RosePetalBlack.Name}}"
+            },
+            "When": {
+                "Rose": "QLFG2"
+            }
+        }
+    ]
+}

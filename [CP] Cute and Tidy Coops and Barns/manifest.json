@@ -1,0 +1,11 @@
+{
+  "Name": "Cute and Tidy Coops and Barns",
+  "Author": "neuralwiles",
+  "Version": "1.1.0",
+  "Description": "Decorates and tidies up coops and barns without changing their size.",
+  "UniqueID": "neuralwiles.CuteAndTidyCoopsAndBarns",
+  "UpdateKeys": [ "Nexus:21563" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
