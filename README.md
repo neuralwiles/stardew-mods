@@ -1,4 +1,4 @@
-# Neuralwiles' Stardew Mods
+# Neuralwiles' Stardew Valley Mods
 * [Cute and Tidy Coops and Barns](https://www.nexusmods.com/stardewvalley/mods/21563): Decorates and tidies up coops and barns without changing their size. Recolor compatible, and adds customizable wall color.
 * [Frog Friends](https://www.nexusmods.com/stardewvalley/mods/20657/): Adds a number of frog friends and a new custom building for them to live in.
 * [Hidden Spring Farm Cave](https://www.nexusmods.com/stardewvalley/mods/23736): A farm cave replacement with space for growing crops, mine cart access... and a secret!
