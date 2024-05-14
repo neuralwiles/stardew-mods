@@ -615,6 +615,14 @@
             "LogName": "Include NPCGiftTastes file",
             "Action": "Include",
             "FromFile": "data/NPCGiftTastes.json"
+        },
+        {
+            "LogName": "Include NPCGiftTastes_RSV file when applicable",
+            "Action": "Include",
+            "FromFile": "data/NPCGiftTastes_RSV.json",
+            "When": {
+                "HasMod |contains=Rafseazz.RidgesideVillage": true
+            }
         }
     ]
 }

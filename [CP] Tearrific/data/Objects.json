@@ -171,7 +171,12 @@
                     "ContextTags": [
                         "color_light_green",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "green_tea_item",
+                        "milk_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea",
+                        "food_nonvegan",
+                        "allergen_dairy"
                     ]    
                 },
                 "{{ModId}}_Mango_Green_Tea": {
@@ -213,7 +218,10 @@
                     "ContextTags": [
                         "color_orange",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "green_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             }
@@ -263,7 +271,10 @@
                     "ContextTags": [
                         "color_light_pink",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "flower_tea_item",
+                        "green_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -316,7 +327,10 @@
                     "ContextTags": [
                         "color_light_sand",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "flower_tea_item",
+                        "green_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -369,7 +383,10 @@
                     "ContextTags": [
                         "color_violet_red",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "green_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -423,7 +440,10 @@
                     "ContextTags": [
                         "color_yellow",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "green_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -477,7 +497,9 @@
                     "ContextTags": [
                         "color_sand",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "white_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 },
                 "{{ModId}}_Coconut_Cream_White_Tea": {
@@ -519,7 +541,12 @@
                     "ContextTags": [
                         "color_light_sand",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "milk_tea_item",
+                        "white_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea",
+                        "food_nonvegan",
+                        "allergen_dairy"
                     ]    
                 },
                 "{{ModId}}_Pomegranate_White_Tea": {
@@ -561,7 +588,10 @@
                     "ContextTags": [
                         "color_dark_pink",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "white_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             }
@@ -611,7 +641,10 @@
                     "ContextTags": [
                         "color_dark_pink",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "white_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]
                 }
             },
@@ -664,7 +697,10 @@
                     "ContextTags": [
                         "color_pink",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "flower_tea_item",
+                        "white_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]
                 }
             },
@@ -717,7 +753,10 @@
                     "ContextTags": [
                         "color_yellow_green",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "white_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -770,7 +809,10 @@
                     "ContextTags": [
                         "color_pink",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "white_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -824,7 +866,9 @@
                     "ContextTags": [
                         "color_dark_orange",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "oolong_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 },
                 "{{ModId}}_Oolong_Milk_Tea": {
@@ -866,7 +910,12 @@
                     "ContextTags": [
                         "color_orange",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "milk_tea_item",
+                        "oolong_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea",
+                        "food_nonvegan",
+                        "allergen_dairy"
                     ]    
                 },
                 "{{ModId}}_Peach_Oolong_Tea": {
@@ -908,7 +957,10 @@
                     "ContextTags": [
                         "color_light_pink",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "oolong_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             }
@@ -958,7 +1010,10 @@
                     "ContextTags": [
                         "color_yellow",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "oolong_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -1011,7 +1066,10 @@
                     "ContextTags": [
                         "color_orange",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "oolong_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -1064,7 +1122,10 @@
                     "ContextTags": [
                         "color_orange",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "oolong_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -1118,7 +1179,10 @@
                     "ContextTags": [
                         "color_red",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "oolong_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -1171,19 +1235,21 @@
                     "ContextTags": [
                         "color_dark_brown",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "black_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 },
-                "{{ModId}}_Black_Milk_Tea": {
-                    "Name": "{{ModId}}_Black_Milk_Tea",
-                    "DisplayName": "{{i18n:Teas.BlackMilk.Name}}",
-                    "Description": "{{i18n:Teas.BlackMilk.Description}}",
+                "{{ModId}}_Taro_Black_Milk_Tea": {
+                    "Name": "{{ModId}}_Taro_Black_Milk_Tea",
+                    "DisplayName": "{{i18n:Teas.TaroBlackMilk.Name}}",
+                    "Description": "{{i18n:Teas.TaroBlackMilk.Description}}",
                     "Type": "Cooking",
                     "Category": -7,
-                    "Price": 218,
+                    "Price": 328,
                     "Texture": "Mods/{{ModId}}/Teas",
                     "SpriteIndex": 22,
-                    "Edibility": 20,
+                    "Edibility": 35,
                     "IsDrink": true,
                     "Buffs": [
                         {
@@ -1211,9 +1277,14 @@
                     ],
                     "ExcludeFromShippingCollection": "{{ExcludeFromPerfection}}",
                     "ContextTags": [
-                        "color_brown",
+                        "color_light_purple",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "milk_tea_item",
+                        "black_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea",
+                        "food_nonvegan",
+                        "allergen_dairy"
                     ]    
                 },
                 "{{ModId}}_Maple_Sugar_Black_Tea": {
@@ -1255,7 +1326,9 @@
                     "ContextTags": [
                         "color_dark_brown",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "black_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 },
                 "{{ModId}}_Strawberry_Black_Tea": {
@@ -1297,7 +1370,10 @@
                     "ContextTags": [
                         "color_red",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "black_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             }
@@ -1347,7 +1423,10 @@
                     "ContextTags": [
                         "color_purple",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "flower_tea_item",
+                        "black_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -1400,7 +1479,10 @@
                     "ContextTags": [
                         "color_dark_pink",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "fruit_tea_item",
+                        "black_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },
@@ -1454,7 +1536,10 @@
                     "ContextTags": [
                         "color_dark_pink",
                         "tea_item",
-                        "tearrific_tea_item"
+                        "flower_tea_item",
+                        "black_tea_item",
+                        "tearrific_tea_item",
+                        "food_tea"
                     ]    
                 }
             },

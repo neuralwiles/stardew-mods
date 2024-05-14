@@ -268,7 +268,7 @@
             "Target": "Data/CookingRecipes",
             "Entries": {
                 "{{ModId}}_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1/10 10/{{ModId}}_Black_Tea 1/null/{{i18n:Teas.Black.Name}}",
-                "{{ModId}}_Black_Milk_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 -6 1/10 10/{{ModId}}_Black_Milk_Tea 1/null/{{i18n:Teas.BlackMilk.Name}}",
+                "{{ModId}}_Taro_Black_Milk_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 830 1 -6 1/10 10/{{ModId}}_Taro_Black_Milk_Tea 1/null/{{i18n:Teas.TaroBlackMilk.Name}}",
                 "{{ModId}}_Maple_Sugar_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 724 1 245 1/10 10/{{ModId}}_Maple_Sugar_Black_Tea 1/null/{{i18n:Teas.MapleSugarBlack.Name}}",
                 "{{ModId}}_Strawberry_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 400 1/10 10/{{ModId}}_Strawberry_Black_Tea 1/null/{{i18n:Teas.StrawberryBlack.Name}}"
             }

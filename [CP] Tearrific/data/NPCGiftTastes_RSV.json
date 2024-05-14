@@ -1,0 +1,754 @@
+{
+    "Changes": [
+        // Basic Teas Gift Tastes
+        {
+            "Log": "Add Basic Teas Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Loose Leaf Teas and Teas as Disliked gifts for Torts
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Torts", "5"],
+                    "Value": "tearrific_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Loose Leaf Teas and Teas as Disliked gifts for Zayne
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Zayne", "5"],
+                    "Value": "tearrific_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Teas as a Liked gift for Olga
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Olga", "3"],
+                    "Value": "tea_item",
+                    "Delimiter": " "
+                },
+                // Add Teas as a Disliked gift for Blair
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Blair", "5"],
+                    "Value": "tea_item",
+                    "Delimiter": " "
+                },
+                // Add Teas as a Hated gift for Louie
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Louie", "7"],
+                    "Value": "tea_item",
+                    "Delimiter": " "
+                },
+                // Add Green Teas as a Loved gift for Naomi
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Naomi", "1"],
+                    "Value": "green_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Green Teas as a Liked gift for Shiro
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Shiro", "3"],
+                    "Value": "green_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Black Teas as a Loved gift for Maive
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Maive", "1"],
+                    "Value": "black_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Black Teas as a Loved gift for Lola
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Lola", "1"],
+                    "Value": "black_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Black Teas as a Liked gift for Sonny
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Sonny", "3"],
+                    "Value": "black_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Milk Teas as a Loved gift for Olga
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Olga", "1"],
+                    "Value": "milk_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Milk Teas as a Liked gift for Kenneth
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Kenneth", "3"],
+                    "Value": "milk_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Fruit Teas as a Liked gift for Ysabelle
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Ysabelle", "3"],
+                    "Value": "fruit_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Fruit Teas as a Liked gift for Daia
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Daia", "3"],
+                    "Value": "fruit_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Fruit Teas as a Liked gift for Alissa
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Alissa", "3"],
+                    "Value": "fruit_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Fruit Teas as a Liked gift for Corine
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Corine", "3"],
+                    "Value": "fruit_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Flower Teas as a Liked gift for Alissa
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Alissa", "3"],
+                    "Value": "flower_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Flower Teas as a Liked gift for Maive
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Maive", "3"],
+                    "Value": "flower_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Flower Teas as a Liked gift for Faye
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Faye", "3"],
+                    "Value": "flower_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Flower Teas as a Liked gift for Paula
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Paula", "3"],
+                    "Value": "flower_tea_item",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Loved gift for Olga
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Olga", "1"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Loved gift for Maive
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Maive", "1"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Loved gift for Shanice
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Shanice", "1"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Loved gift for Malaya
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Malaya", "1"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Loved gift for Corine
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Corine", "1"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Liked gift for Ysabelle
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Ysabelle", "3"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Liked gift for Ariah
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Ariah", "3"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Disliked gift for Keahi
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Keahi", "5"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Disliked gift for Trinnie
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Trinnie", "5"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Honey Matcha Latte as a Disliked gift for Yuuma
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Yuuma", "5"],
+                    "Value": "{{ModId}}_Honey_Matcha_Latte",
+                    "Delimiter": " "
+                },
+                // Add Mango Green Tea as a Loved gift for Corine
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Corine", "1"],
+                    "Value": "{{ModId}}_Mango_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Mango Green Tea as a Loved gift for Flor
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Flor", "1"],
+                    "Value": "{{ModId}}_Mango_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Mango Green Tea as a Loved gift for Maddie
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Maddie", "1"],
+                    "Value": "{{ModId}}_Mango_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Mango Green Tea as a Loved gift for Philip
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Philip", "1"],
+                    "Value": "{{ModId}}_Mango_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Mango Green Tea as a Loved gift for Malaya
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Malaya", "1"],
+                    "Value": "{{ModId}}_Mango_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Mango Green Tea as a Loved gift for Ian
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Ian", "1"],
+                    "Value": "{{ModId}}_Mango_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Mango Green Tea as a Loved gift for Jeric
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Jeric", "1"],
+                    "Value": "{{ModId}}_Mango_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Mango Green Tea as a Liked gift for Shanice
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Shanice", "3"],
+                    "Value": "{{ModId}}_Mango_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Mango Green Tea as a Hated gift for Kiarra
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Kiarra", "7"],
+                    "Value": "{{ModId}}_Mango_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Coconut Cream White Tea as a Loved gift for Keahi
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Keahi", "1"],
+                    "Value": "{{ModId}}_Coconut_Cream_White_Tea",
+                    "Delimiter": " "
+                },
+                // Add Coconut Cream White Tea as a Loved gift for Pika
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Pika", "1"],
+                    "Value": "{{ModId}}_Coconut_Cream_White_Tea",
+                    "Delimiter": " "
+                },
+                // Add Taro Black Milk Tea as a Loved gift for Yuuma
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Yuuma", "1"],
+                    "Value": "{{ModId}}_Taro_Black_Milk_Tea",
+                    "Delimiter": " "
+                },
+                // Add Strawberry Black Tea as a Loved gift for Ian
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Ian", "1"],
+                    "Value": "{{ModId}}_Strawberry_Black_Tea",
+                    "Delimiter": " "
+                },
+                // Add Strawberry Black Tea as a Loved gift for Kenneth
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Kenneth", "1"],
+                    "Value": "{{ModId}}_Strawberry_Black_Tea",
+                    "Delimiter": " "
+                },
+                // Add Strawberry Black Tea as a Loved gift for Olga
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Olga", "1"],
+                    "Value": "{{ModId}}_Strawberry_Black_Tea",
+                    "Delimiter": " "
+                },
+                // Add Strawberry Black Tea as a Loved gift for Irene
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Irene", "1"],
+                    "Value": "{{ModId}}_Strawberry_Black_Tea",
+                    "Delimiter": " "
+                },
+                // Add Strawberry Black Tea as a Loved gift for Shanice
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Shanice", "1"],
+                    "Value": "{{ModId}}_Strawberry_Black_Tea",
+                    "Delimiter": " "
+                },
+                // Add Strawberry Black Tea as a Liked gift for Lenny
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Lenny", "3"],
+                    "Value": "{{ModId}}_Strawberry_Black_Tea",
+                    "Delimiter": " "
+                },
+                // Add Strawberry Black Tea as a Liked gift for Ariah
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Ariah", "3"],
+                    "Value": "{{ModId}}_Strawberry_Black_Tea",
+                    "Delimiter": " "
+                },
+                // Add Strawberry Black Tea as a Liked gift for Trinnie
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Trinnie", "3"],
+                    "Value": "{{ModId}}_Strawberry_Black_Tea",
+                    "Delimiter": " "
+                },
+                // Add Strawberry Black Tea as a Liked gift for Malaya
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Malaya", "3"],
+                    "Value": "{{ModId}}_Strawberry_Black_Tea",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        // Cornucopia Lychee Green Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia Lychee Green Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Lychee Green Tea as a Loved gift for Pika
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Pika", "1"],
+                    "Value": "{{ModId}}_Lychee_Green_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Cornucopia Yuzu Green Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia Yuzu Green Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Yuzu Green Tea as a Loved gift for Shiro
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Shiro", "1"],
+                    "Value": "{{ModId}}_Yuzu_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Yuzu Green Tea as a Loved gift for Kiarra
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Kiarra", "1"],
+                    "Value": "{{ModId}}_Yuzu_Green_Tea",
+                    "Delimiter": " "
+                },
+                // Add Yuzu Green Tea as a Liked gift for Faye
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Faye", "3"],
+                    "Value": "{{ModId}}_Yuzu_Green_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Cornucopia/WF Raspberry White Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia/WF Raspberry White Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Raspberry White Tea as a Loved gift for Philip
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Philip", "1"],
+                    "Value": "{{ModId}}_Raspberry_White_Tea",
+                    "Delimiter": " "
+                },
+                // Add Raspberry White Tea as a Loved gift for Ariah
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Ariah", "1"],
+                    "Value": "{{ModId}}_Raspberry_White_Tea",
+                    "Delimiter": " "
+                },
+                // Add Raspberry White Tea as a Loved gift for Irene
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Irene", "1"],
+                    "Value": "{{ModId}}_Raspberry_White_Tea",
+                    "Delimiter": " "
+                },
+                // Add Raspberry White Tea as a Liked gift for June
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "June", "3"],
+                    "Value": "{{ModId}}_Raspberry_White_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Raspberry": "Cornucopia, WF"
+            }
+        },
+        // Cornucopia Grapefruit White Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia Grapefruit Oolong Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Grapefruit Oolong Tea as a Loved gift for Zayne
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Zayne", "1"],
+                    "Value": "{{ModId}}_Grapefruit_White_Tea",
+                    "Delimiter": " "
+                },
+                // Add Grapefruit Oolong Tea as a Loved gift for Bryle
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Bryle", "1"],
+                    "Value": "{{ModId}}_Grapefruit_White_Tea",
+                    "Delimiter": " "
+                },
+                // Add Grapefruit Oolong Tea as a Loved gift for Paula
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Paula", "1"],
+                    "Value": "{{ModId}}_Grapefruit_White_Tea",
+                    "Delimiter": " "
+                },
+                // Add Grapefruit Oolong Tea as a Liked gift for Sean
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Sean", "3"],
+                    "Value": "{{ModId}}_Grapefruit_White_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Cornucopia/WF Lemon Ginger Oolong Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia/WF Lemon Ginger Oolong Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Lemon Ginger Oolong Tea as a Loved gift for Ezekiel
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Ezekiel", "1"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Lemon Ginger Oolong Tea as a Loved gift for Ian
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Ian", "1"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Lemon Ginger Oolong Tea as a Loved gift for Jeric
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Jeric", "1"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Lemon Ginger Oolong Tea as a Loved gift for Richard
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Richard", "1"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Lemon Ginger Oolong Tea as a Loved gift for Maive
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Maive", "1"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Lemon Ginger Oolong Tea as a Loved gift for Sonny
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Sonny", "1"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Lemon Ginger Oolong Tea as a Loved gift for Zayne
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Zayne", "1"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Lemon Ginger Oolong Tea as a Liked gift for Flor
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Flor", "3"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Lemon Ginger Oolong Tea as a Liked gift for Philip
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Philip", "3"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Lemon Ginger Oolong Tea as a Liked gift for Blair
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Blair", "3"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Lemon": "Cornucopia, WF"
+            }
+        },
+        // Cornucopia/WF Creamsicle Oolong Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia/WF Creamsicle Oolong Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Creamsicle Oolong Tea as a Loved gift for Bryle
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Bryle", "1"],
+                    "Value": "{{ModId}}_Creamsicle_Oolong_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Vanilla": "Cornucopia, WF"
+            }
+        },
+        // Cornucopia Papaya Oolong Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia Papaya Oolong Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Papaya Oolong Tea as a Liked gift for Keahi
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Keahi", "3"],
+                    "Value": "{{ModId}}_Papaya_White_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        // Cornucopia/WF Apple Cinnamon Oolong Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia/WF Apple Cinnamon Oolong Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Apple Cinnamon Oolong Tea as a Loved gift for Yuuma
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Yuuma", "1"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Loved gift for June
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "June", "1"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Loved gift for Jio
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Jio", "1"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Loved gift for Daia
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Daia", "1"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Loved gift for Corine
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Corine", "1"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Loved gift for Carmen
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Carmen", "1"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Loved gift for Blair
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Blair", "1"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Liked gift for Flor
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Flor", "3"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Liked gift for Maddie
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Maddie", "3"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Liked gift for Paula
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Paula", "3"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Cinnamon": "Cornucopia, WF"
+            }
+        },
+        // Cornucopia/WF/QLFG2/SM Lavender Black Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia/WF/QLFG2/SM Lavender Black Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Lavender Black Tea as a Loved gift for Richard
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Richard", "1"],
+                    "Value": "{{ModId}}_Lavender_Black_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Lavender": "Cornucopia, WF, QLFG2, SM"
+            }
+        },
+        // Cornucopia Passion Fruit Black Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia Passion Fruit Black Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Passion Fruit Black Tea as a Loved gift for Kimpoi
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Kimpoi", "1"],
+                    "Value": "{{ModId}}_Passion_Fruit_Black_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedCropsPackEnabled"
+            }
+        },
+        // Cornucopia/QLFG2 Rose Petal Black Tea Gift Tastes
+        {
+            "Log": "Add Cornucopia/QLFG2 Rose Petal Black Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Rose Petal Black Tea as a Loved gift for Faye
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Faye", "1"],
+                    "Value": "{{ModId}}_Rose_Petal_Black_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Rose": "Cornucopia, QLFG2"
+            }
+        }
+    ]
+}
