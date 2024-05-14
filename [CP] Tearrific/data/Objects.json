@@ -1378,9 +1378,9 @@
                 }
             }
         },
-        // Cornucopia/WF/QLFG2/SM Lavender Black Tea Object
+        // Cornucopia/WF/QLFG2 Lavender Black Tea Object
         {
-            "LogName": "Cornucopia/WF/QLFG2/SM Lavender Black Tea Tea Object",
+            "LogName": "Cornucopia/WF/QLFG2 Lavender Black Tea Tea Object",
             "Action": "EditData",
             "Target": "Data/Objects",
             "Entries": {
@@ -1431,7 +1431,7 @@
                 }
             },
             "When": {
-                "Lavender": "Cornucopia, WF, QLFG2, SM"
+                "Lavender": "Cornucopia, WF, QLFG2"
             }
         },
         // Cornucopia Passion Fruit Black Tea Object

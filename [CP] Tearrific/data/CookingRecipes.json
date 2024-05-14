@@ -273,7 +273,7 @@
                 "{{ModId}}_Strawberry_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 400 1/10 10/{{ModId}}_Strawberry_Black_Tea 1/null/{{i18n:Teas.StrawberryBlack.Name}}"
             }
         },
-        // Cornucopia/WF/QLFG2/SM Lavender Black Tea Recipe
+        // Cornucopia/WF/QLFG2 Lavender Black Tea Recipe
         {
             "Log": "Cornucopia Lavender Black Tea Recipe",
             "Action": "EditData",
@@ -305,17 +305,6 @@
             },
             "When": {
                 "Lavender": "QLFG2"
-            }
-        },
-        {
-            "Log": "SM Lavender Black Tea Recipe",
-            "Action": "EditData",
-            "Target": "Data/CookingRecipes",
-            "Entries": {
-                "{{ModId}}_Lavender_Black_Tea": "{{ModId}}_Loose_Leaf_Black_Tea 1 Lumisteria.SereneMeadow_ButterflyLavender 1/10 10/{{ModId}}_Lavender_Black_Tea 1/null/{{i18n:Teas.LavenderBlack.Name}}"
-            },
-            "When": {
-                "Lavender": "SM"
             }
         },
         // Cornucopia Passion Fruit Black Tea Recipe

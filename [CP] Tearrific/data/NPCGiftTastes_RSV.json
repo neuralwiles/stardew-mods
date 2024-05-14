@@ -695,9 +695,9 @@
                 "Cinnamon": "Cornucopia, WF"
             }
         },
-        // Cornucopia/WF/QLFG2/SM Lavender Black Tea Gift Tastes
+        // Cornucopia/WF/QLFG2 Lavender Black Tea Gift Tastes
         {
-            "Log": "Add Cornucopia/WF/QLFG2/SM Lavender Black Tea Gift Tastes for RSV NPCs",
+            "Log": "Add Cornucopia/WF/QLFG2 Lavender Black Tea Gift Tastes for RSV NPCs",
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "TextOperations": [
@@ -710,7 +710,7 @@
                 }
             ],
             "When": {
-                "Lavender": "Cornucopia, WF, QLFG2, SM"
+                "Lavender": "Cornucopia, WF, QLFG2"
             }
         },
         // Cornucopia Passion Fruit Black Tea Gift Tastes

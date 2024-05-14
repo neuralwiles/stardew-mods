@@ -75,7 +75,7 @@
         },
         "LavenderCompatibility": {
             "Description": "Which lavender item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the lavender-related recipe.",
-            "AllowValues": "Auto, None, Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2, Lumisteria Serene Meadow",
+            "AllowValues": "Auto, None, Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2",
             "Default": "Auto",
             "AllowBlank": false,
             "AllowMultiple": false,
@@ -439,7 +439,7 @@
             }
         },
 
-        // Lavender can be from Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2, Lumisteria Serene Meadow
+        // Lavender can be from Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2
         {
             // Disable if set to Auto and none of the relevant mods are installed
             "Name": "Lavender",
@@ -448,17 +448,7 @@
                 "LavenderCompatibility": "Auto",
                 "HasMod |contains=Cornucopia.MoreFlowers": false,
                 "HasMod |contains=wildflour.ateliercrops": false,
-                "HasMod |contains=Lumisteria.SereneMeadow": false,
                 "HasMod |contains=PC.CP.QL.FlowerGarden2": false
-            }
-        },
-        {
-            // Enable SM compatibility if Auto is selected
-            "Name": "Lavender",
-            "Value": "SM",
-            "When": {
-                "LavenderCompatibility": "Auto",
-                "HasMod |contains=Lumisteria.SereneMeadow": true
             }
         },
         {
@@ -496,14 +486,6 @@
             "Value": "Disabled",
             "When": {
                 "LavenderCompatibility": "None"
-            }
-        },
-        {
-            // Enable SM compatibility when manually selected
-            "Name": "Lavender",
-            "Value": "SM",
-            "When": {
-                "LavenderCompatibility": "Lumisteria Serene Meadow"
             }
         },
         {
