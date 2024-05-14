@@ -48,10 +48,10 @@
                     "Value": "tea_item",
                     "Delimiter": " "
                 },
-                // Add White Teas as a Loved gift for Elliot
+                // Add White Teas as a Loved gift for Elliott
                 {
                     "Operation": "Append",
-                    "Target": ["Fields", "Elliot", "1"],
+                    "Target": ["Fields", "Elliott", "1"],
                     "Value": "white_tea_item",
                     "Delimiter": " "
                 },
@@ -565,10 +565,10 @@
                     "Value": "{{ModId}}_Rose_Petal_Black_Tea",
                     "Delimiter": " "
                 },
-                // Add Rose Petal Black Tea as a Loved gift for Elliot
+                // Add Rose Petal Black Tea as a Loved gift for Elliott
                 {
                     "Operation": "Append",
-                    "Target": ["Fields", "Elliot", "1"],
+                    "Target": ["Fields", "Elliott", "1"],
                     "Value": "{{ModId}}_Rose_Petal_Black_Tea",
                     "Delimiter": " "
                 }
