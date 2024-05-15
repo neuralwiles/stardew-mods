@@ -1,7 +1,7 @@
 {
   "Format": "2.0.0",
   "ConfigSchema": {
-		"Enable Casking": {
+		"EnableCasking": {
 			"Description": "Enables casking in the farm cave.",
 			"AllowValues": "true, false",
 			"Default": "false"
@@ -206,7 +206,7 @@
 				"CanCaskHere": "T"
 			},
 			"When": {
-				"Enable Casking": "true"
+				"EnableCasking": "true"
 			}
 		},
   ]

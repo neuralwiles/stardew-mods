@@ -1,0 +1,5 @@
+{
+    // Translations for Config
+    "Config.EnableCasking.Name": "Enable Casking",
+    "Config.EnableCasking.Description": "Enables casking in the farm cave."
+}
