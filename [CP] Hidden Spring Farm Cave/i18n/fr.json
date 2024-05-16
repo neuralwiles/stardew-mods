@@ -1,0 +1,5 @@
+{
+    // Translations for Config
+    "Config.EnableCasking.Name": "Autoriser les fûts dans la cave",
+    "Config.EnableCasking.Description": "Permet de poser et donc d’utiliser des fûts dans la cave."
+}

@@ -1,7 +1,7 @@
 {
   "Name": "Hidden Spring Farm Cave",
   "Author": "neuralwiles",
-  "Version": "1.1.0",
+  "Version": "1.1.1",
   "Description": "A farm cave replacement with space for growing crops, mine cart access... and a secret!",
   "UniqueID": "neuralwiles.HiddenSpringFarmCave",
   "UpdateKeys": [ "Nexus:23736" ],
