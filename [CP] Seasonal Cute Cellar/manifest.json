@@ -1,7 +1,7 @@
 {
   "Name": "Seasonal Cute Cellar",
   "Author": "neuralwiles",
-  "Version": "4.0.0",
+  "Version": "4.0.2",
   "Description": "Changes the cellar to have a cozy, seasonal theme. Includes and optional expansion that doubles the size and a spa.",
   "UniqueID": "neuralwiles.SeasonalCuteCellar",
   "UpdateKeys": [ "Nexus:13845" ],

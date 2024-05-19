@@ -56,7 +56,7 @@
       "LogName": "Load empty cellar map",
       "Action": "EditMap",
       "Target": "Maps/Cellar",
-      "FromFile": "assets/Cellar_{{Cellar Size}}_{{Season}}.tmx",
+      "FromFile": "assets/Cellar_{{CellarSize}}_{{Season}}.tmx",
     },
     // Apply decor style to cellar if applicable
     {
@@ -64,9 +64,9 @@
       "Action": "EditMap",
       "PatchMode": "Overlay",
       "Target": "Maps/Cellar",
-      "FromFile": "assets/Decor/{{Cellar Decor}}_{{Season}}.tmx",
+      "FromFile": "assets/Decor/{{CellarDecor}}_{{Season}}.tmx",
       "When": {
-        "Cellar Decor": "Lounge, Camping"
+        "CellarDecor": "Lounge, Camping"
       }
     },
     // Add spa room on the right side of the map when enabled
@@ -86,7 +86,7 @@
         "Spa": "true"
       }
     },
-    // Add trapdoor with sewer access when enabled
+    // Add trapdoor with SewerAccess when enabled
     {
       "LogName": "Add sewer trapdoor",
       "Action": "EditMap",
@@ -100,7 +100,7 @@
         "Height": 1
       },
       "When": {
-        "Sewer Access": "true"
+        "SewerAccess": "true"
       }
     },
     // Apply cat string lights in the desired color when using the Camping style
@@ -109,7 +109,7 @@
       "Action": "EditMap",
       "PatchMode": "Overlay",
       "Target": "Maps/Cellar",
-      "FromFile": "assets/Lights/{{Camping String Lights}}.tmx",
+      "FromFile": "assets/Lights/{{CampingStringLights}}.tmx",
       "ToArea": {
         "X": 17,
         "Y": 3,
@@ -117,17 +117,17 @@
         "Height": 2
       },
       "When": {
-        "Cellar Decor": "Camping",
-        "Camping String Lights": "Beige, Pink, Blue"
+        "CellarDecor": "Camping",
+        "CampingStringLights": "Beige, Pink, Blue"
       }
     },
-    // Apply floor style overrides when a manual option is selected
+    // Apply FloorStyle overrides when a manual option is selected
     {
-      "LogName": "Override floor style when a manual option is selected",
+      "LogName": "Override FloorStyle when a manual option is selected",
       "Action": "EditMap",
       "PatchMode": "Overlay",
       "Target": "Maps/Cellar",
-      "FromFile": "assets/Floor/{{Floor Style}}_{{Season}}.tmx",
+      "FromFile": "assets/Floor/{{FloorStyle}}_{{Season}}.tmx",
       "ToArea": {
         "X": 16,
         "Y": 7,
@@ -135,7 +135,7 @@
         "Height": 6
       },
       "When": {
-        "Floor Style": "Tile, Dirt, Grass"
+        "FloorStyle": "Tile, Dirt, Grass"
       }
     }
   ]
