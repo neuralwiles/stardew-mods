@@ -164,15 +164,15 @@
                                     "Delay": 0
                                 }
                             ],
-                            "Frames": [ 2, 3 ],
-                            "Interval": 100
+                            "Frames": [ 2 ],
+                            "Interval": 1000
                         }
                     ],
                     "WorkingEffects": [
                         {
                             "Condition": null,
-                            "Frames": [ 2, 3 ],
-                            "Interval": 100
+                            "Frames": [ 2 ],
+                            "Interval": 1000
                         }
                     ],
                     "WorkingEffectChance": 1,
