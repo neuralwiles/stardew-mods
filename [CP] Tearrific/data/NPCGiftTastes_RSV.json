@@ -13,13 +13,6 @@
                     "Value": "tearrific_tea_item",
                     "Delimiter": " "
                 },
-                // Add Loose Leaf Teas and Teas as Disliked gifts for Zayne
-                {
-                    "Operation": "Append",
-                    "Target": ["Fields", "Zayne", "5"],
-                    "Value": "tearrific_tea_item",
-                    "Delimiter": " "
-                },
                 // Add Teas as a Liked gift for Olga
                 {
                     "Operation": "Append",
@@ -94,13 +87,6 @@
                 {
                     "Operation": "Append",
                     "Target": ["Fields", "Ysabelle", "3"],
-                    "Value": "fruit_tea_item",
-                    "Delimiter": " "
-                },
-                // Add Fruit Teas as a Liked gift for Daia
-                {
-                    "Operation": "Append",
-                    "Target": ["Fields", "Daia", "3"],
                     "Value": "fruit_tea_item",
                     "Delimiter": " "
                 },
@@ -365,6 +351,40 @@
                 }
             ]
         },
+        {
+            "Log": "Add Basic Teas Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Fruit Teas as a Liked gift for Daia
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Daia", "3"],
+                    "Value": "fruit_tea_item",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+				"HasSeenEvent: hostPlayer": 75160263
+			}
+        },
+        {
+            "Log": "Add Basic Teas Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Loose Leaf Teas and Teas as Disliked gifts for Zayne
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Zayne", "5"],
+                    "Value": "tearrific_tea_item",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+				"HasSeenEvent: hostPlayer |contains=75160338": true
+			}
+        },
         // Cornucopia Lychee Green Tea Gift Tastes
         {
             "Log": "Add Cornucopia Lychee Green Tea Gift Tastes for RSV NPCs",
@@ -462,20 +482,6 @@
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "TextOperations": [
-                // Add Grapefruit Oolong Tea as a Loved gift for Zayne
-                {
-                    "Operation": "Append",
-                    "Target": ["Fields", "Zayne", "1"],
-                    "Value": "{{ModId}}_Grapefruit_White_Tea",
-                    "Delimiter": " "
-                },
-                // Add Grapefruit Oolong Tea as a Loved gift for Bryle
-                {
-                    "Operation": "Append",
-                    "Target": ["Fields", "Bryle", "1"],
-                    "Value": "{{ModId}}_Grapefruit_White_Tea",
-                    "Delimiter": " "
-                },
                 // Add Grapefruit Oolong Tea as a Loved gift for Paula
                 {
                     "Operation": "Append",
@@ -494,6 +500,44 @@
             "When": {
                 "HasMod |contains=Cornucopia.MoreCrops": true,
                 "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled"
+            }
+        },
+        {
+            "Log": "Add Cornucopia Grapefruit Oolong Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Grapefruit Oolong Tea as a Loved gift for Bryle
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Bryle", "1"],
+                    "Value": "{{ModId}}_Grapefruit_White_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled",
+                "HasSeenEvent: hostPlayer |contains=75160375": true
+            }
+        },
+        {
+            "Log": "Add Cornucopia Grapefruit Oolong Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Grapefruit Oolong Tea as a Loved gift for Zayne
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Zayne", "1"],
+                    "Value": "{{ModId}}_Grapefruit_White_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true,
+                "HasFlag": "Cornucopia.MoreCrops_ExtendedTreesPackEnabled",
+                "HasSeenEvent: hostPlayer |contains=75160338": true
             }
         },
         // Cornucopia/WF Lemon Ginger Oolong Tea Gift Tastes
@@ -544,13 +588,6 @@
                     "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
                     "Delimiter": " "
                 },
-                // Add Lemon Ginger Oolong Tea as a Loved gift for Zayne
-                {
-                    "Operation": "Append",
-                    "Target": ["Fields", "Zayne", "1"],
-                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
-                    "Delimiter": " "
-                },
                 // Add Lemon Ginger Oolong Tea as a Liked gift for Flor
                 {
                     "Operation": "Append",
@@ -577,6 +614,24 @@
                 "Lemon": "Cornucopia, WF"
             }
         },
+        {
+            "Log": "Add Cornucopia/WF Lemon Ginger Oolong Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Lemon Ginger Oolong Tea as a Loved gift for Zayne
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Zayne", "1"],
+                    "Value": "{{ModId}}_Lemon_Ginger_Oolong_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Lemon": "Cornucopia, WF",
+                "HasSeenEvent: hostPlayer |contains=75160338": true
+            }
+        },
         // Cornucopia/WF Creamsicle Oolong Tea Gift Tastes
         {
             "Log": "Add Cornucopia/WF Creamsicle Oolong Tea Gift Tastes for RSV NPCs",
@@ -592,7 +647,8 @@
                 }
             ],
             "When": {
-                "Vanilla": "Cornucopia, WF"
+                "Vanilla": "Cornucopia, WF",
+                "HasSeenEvent: hostPlayer |contains=75160375": true
             }
         },
         // Cornucopia Papaya Oolong Tea Gift Tastes
@@ -631,20 +687,6 @@
                 {
                     "Operation": "Append",
                     "Target": ["Fields", "June", "1"],
-                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
-                    "Delimiter": " "
-                },
-                // Add Apple Cinnamon Oolong Tea as a Loved gift for Jio
-                {
-                    "Operation": "Append",
-                    "Target": ["Fields", "Jio", "1"],
-                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
-                    "Delimiter": " "
-                },
-                // Add Apple Cinnamon Oolong Tea as a Loved gift for Daia
-                {
-                    "Operation": "Append",
-                    "Target": ["Fields", "Daia", "1"],
                     "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
                     "Delimiter": " "
                 },
@@ -693,6 +735,31 @@
             ],
             "When": {
                 "Cinnamon": "Cornucopia, WF"
+            }
+        },
+        {
+            "Log": "Add Cornucopia/WF Apple Cinnamon Oolong Tea Gift Tastes for RSV NPCs",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                // Add Apple Cinnamon Oolong Tea as a Loved gift for Jio
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Jio", "1"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                },
+                // Add Apple Cinnamon Oolong Tea as a Loved gift for Daia
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Daia", "1"],
+                    "Value": "{{ModId}}_Apple_Cinnamon_Oolong_Tea",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Cinnamon": "Cornucopia, WF",
+                "HasSeenEvent: hostPlayer": 75160263
             }
         },
         // Cornucopia/WF/QLFG2 Lavender Black Tea Gift Tastes

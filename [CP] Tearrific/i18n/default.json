@@ -6,7 +6,7 @@
     "Config.ExcludeFromPerfection.Description": "Exclude items added by this mod from the requirements for perfection and full shipment.",
 
     "Config.OxidizerSprite.Name": "Oxidizer Sprite",
-    "Config.OxidizerSprite.Description": "Which sprite to use for the Oxidizer: one which matches the vanilla game, one which matches Gwen's Medieval Craftables, or one which matches Elegant Craftables. Defaults to the vanilla sprite.",
+    "Config.OxidizerSprite.Description": "Which sprite to use for the Oxidizer: one which matches the vanilla game, one which matches Gwen's Medieval Craftables, or one which matches Elegant Craftables. Choosing \"Auto\" will auto-select which sprite to use based on what you have installed.",
 
     "Config.UseNewGreenTeaSprite.Name": "Use New Green Tea Sprite",
     "Config.UseNewGreenTeaSprite.Description": "Replace the base game's Green Tea sprite with one that matches this mod.",
@@ -15,28 +15,28 @@
     "Config.Section.ModCompatibility.Description": "Compatibility options for custom crop and flower mods.",
 
     "Config.JasmineCompatibility.Name": "Jasmine Compatibility",
-    "Config.JasmineCompatibility.Description": "Which jasmine item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the jasmine-related recipe.",
+    "Config.JasmineCompatibility.Description": "Which crop mod's jasmine to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the jasmine recipe.",
 
     "Config.RaspberryCompatibility.Name": "Raspberry Compatibility",
-    "Config.RaspberryCompatibility.Description": "Which raspberry item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the raspberry-related recipe.",
+    "Config.RaspberryCompatibility.Description": "Which crop mod's raspberry to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the raspberry recipe.",
 
     "Config.PeonyCompatibility.Name": "Peony Compatibility",
-    "Config.PeonyCompatibility.Description": "Which peony item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the peony-related recipe.",
+    "Config.PeonyCompatibility.Description": "Which crop mod's peony to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the peony recipe.",
 
     "Config.LemonCompatibility.Name": "Lemon Compatibility",
-    "Config.LemonCompatibility.Description": "Which lemon item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the lemon-related recipe.",
+    "Config.LemonCompatibility.Description": "Which crop mod's lemon to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the lemon recipe.",
 
     "Config.VanillaCompatibility.Name": "Vanilla Compatibility",
-    "Config.VanillaCompatibility.Description": "Which vanilla item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the vanilla-related recipe.",
+    "Config.VanillaCompatibility.Description": "Which crop mod's vanilla to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the vanilla recipe.",
 
     "Config.CinnamonCompatibility.Name": "Cinnamon Compatibility",
-    "Config.CinnamonCompatibility.Description": "Which cinnamon item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the cinnamon-related recipe.",
+    "Config.CinnamonCompatibility.Description": "Which crop mod's cinnamon to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the cinnamon recipe.",
 
     "Config.LavenderCompatibility.Name": "Lavender Compatibility",
-    "Config.LavenderCompatibility.Description": "Which lavender item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the lavender-related recipe.",
+    "Config.LavenderCompatibility.Description": "Which crop mod's lavender to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the lavender recipe.",
 
     "Config.RoseCompatibility.Name": "Rose Compatibility",
-    "Config.RoseCompatibility.Description": "Which rose item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the rose-related recipe.",
+    "Config.RoseCompatibility.Description": "Which crop mod's rose to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the rose recipe.",
 
     // Translations for Oxidizer
     "Oxidizer.Name": "Oxidizer",
@@ -46,7 +46,7 @@
 
     // Translations for Oxidizer Recipe Mail
     "OxidizerRecipeMail.Name": "Process Your Tea Leaves!",
-    "OxidizerRecipeMail.Text": "@, ^^ I know I wrote to you about how to cultivate tea bushes on your farm, but I forgot to mention that you can also process your tea leaves into various kinds of loose leaf tea. Loose leaf tea can be brewed into all sorts of tasty drinks, so give it a try! Here's a recipe for an oxidizer to get you started.^^ - Caroline",
+    "OxidizerRecipeMail.Text": "@, ^^I know I wrote to you about how to cultivate tea bushes on your farm, but I forgot to mention that you can also process your tea leaves into various kinds of loose leaf tea. ^^Loose leaf tea can be brewed into all sorts of tasty drinks, so give it a try! Here's a recipe for an oxidizer to get you started.^^ - Caroline",
 
     // Translations for Loose Leaf Teas
     "LooseLeaf.Green.Name": "Loose Leaf Green Tea",

@@ -10,9 +10,9 @@
             "Section": "General"
         },
         "OxidizerSprite": {
-            "Description": "Which sprite to use for the Oxidizer: one which matches the vanilla game, one which matches Gwen's Medieval Craftables, or one which matches Elegant Craftables. Defaults to the vanilla sprite.",
-            "AllowValues": "Vanilla, Medieval, Elegant",
-            "Default": "Vanilla",
+            "Description": "Which sprite to use for the Oxidizer: one which matches the vanilla game, one which matches Gwen's Medieval Craftables, or one which matches Elegant Craftables. Choosing \"Auto\" will auto-select which sprite to use based on what you have installed.",
+            "AllowValues": "Auto, Vanilla, Medieval, Elegant",
+            "Default": "Auto",
             "AllowBlank": false,
             "AllowMultiple": false,
             "Section": "General"
@@ -26,7 +26,7 @@
             "Section": "General"
         },
         "JasmineCompatibility": {
-            "Description": "Which jasmine item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the jasmine-related recipe.",
+            "Description": "Which crop mod's jasmine to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the jasmine recipe.",
             "AllowValues": "Auto, None, Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2",
             "Default": "Auto",
             "AllowBlank": false,
@@ -34,7 +34,7 @@
             "Section": "Mod Compatibility"
         },
         "RaspberryCompatibility": {
-            "Description": "Which raspberry item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the raspberry-related recipe.",
+            "Description": "Which crop mod's raspberry to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the raspberry recipe.",
             "AllowValues": "Auto, None, Cornucopia - More Crops, Wildflour's Atelier Goods - Forager",
             "Default": "Auto",
             "AllowBlank": false,
@@ -42,7 +42,7 @@
             "Section": "Mod Compatibility"
         },
         "PeonyCompatibility": {
-            "Description": "Which peony item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the peony-related recipe.",
+            "Description": "Which crop mod's peony to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the peony recipe.",
             "AllowValues": "Auto, None, Cornucopia - More Flowers (Extended Flowers), Quaint Living - Flower Garden 2",
             "Default": "Auto",
             "AllowBlank": false,
@@ -50,7 +50,7 @@
             "Section": "Mod Compatibility"
         },
         "LemonCompatibility": {
-            "Description": "Which lemon item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the lemon-related recipe.",
+            "Description": "Which crop mod's lemon to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the lemon recipe.",
             "AllowValues": "Auto, None, Cornucopia - More Crops (Extended Trees), Wildflour's Atelier Goods - Forager",
             "Default": "Auto",
             "AllowBlank": false,
@@ -58,7 +58,7 @@
             "Section": "Mod Compatibility"
         },
         "VanillaCompatibility": {
-            "Description": "Which vanilla item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the vanilla-related recipes.",
+            "Description": "Which crop mod's vanilla to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the vanilla recipe.",
             "AllowValues": "Auto, None, Cornucopia - More Crops, Wildflour's Atelier Goods - Forager",
             "Default": "Auto",
             "AllowBlank": false,
@@ -66,7 +66,7 @@
             "Section": "Mod Compatibility"
         },
         "CinnamonCompatibility": {
-            "Description": "Which cinnamon item to use as an ingredient from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the cinnamon-related recipe.",
+            "Description": "Which crop mod's cinnamon to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the cinnamon recipe.",
             "AllowValues": "Auto, None, Cornucopia - More Crops (Herbs), Wildflour's Atelier Goods - Forager",
             "Default": "Auto",
             "AllowBlank": false,
@@ -74,7 +74,7 @@
             "Section": "Mod Compatibility"
         },
         "LavenderCompatibility": {
-            "Description": "Which lavender item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the lavender-related recipe.",
+            "Description": "Which crop mod's lavender to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the lavender recipe.",
             "AllowValues": "Auto, None, Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2",
             "Default": "Auto",
             "AllowBlank": false,
@@ -82,7 +82,7 @@
             "Section": "Mod Compatibility"
         },
         "RoseCompatibility": {
-            "Description": "Which rose item to use as an ingredient, from mods which add it. Choosing \"Auto\" will attempt to auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen by default. Choosing \"None\" disables the rose-related recipe.",
+            "Description": "Which crop mod's rose to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the rose recipe.",
             "AllowValues": "Auto, None, Cornucopia - More Flowers, Quaint Living - Flower Garden 2",
             "Default": "Auto",
             "AllowBlank": false,
@@ -91,8 +91,60 @@
         },
     },
     "DynamicTokens": [
+        // Manual and auto Oxidizer sprite support
+        {
+            // Choose the Vanilla sprite if set to Auto and none of the relevant mods are installed
+            "Name": "OxidizerSpriteTheme",
+            "Value": "Vanilla",
+            "When": {
+                "OxidizerSprite": "Auto",
+                "HasMod |contains=Gweniaczek.Medieval_Craftables": false,
+                "HasMod |contains=Colling.Craftables": false
+            }
+        },
+        {
+            // Enable Medieval compatibility if Auto is selected
+            "Name": "OxidizerSpriteTheme",
+            "Value": "Medieval",
+            "When": {
+                "OxidizerSprite": "Auto",
+                "HasMod |contains=Gweniaczek.Medieval_Craftables": true
+            }
+        },
+        {
+            // Enable Elegant compatibility if Auto is selected
+            "Name": "OxidizerSpriteTheme",
+            "Value": "Elegant",
+            "When": {
+                "OxidizerSprite": "Auto",
+                "HasMod |contains=Colling.Craftables": true
+            }
+        },
+        {
+            // Enable Vanilla sprite when manually selected
+            "Name": "OxidizerSpriteTheme",
+            "Value": "Vanilla",
+            "When": {
+                "OxidizerSprite": "Vanilla"
+            }
+        },
+        {
+            // Enable Medieval compatibility when manually selected
+            "Name": "OxidizerSpriteTheme",
+            "Value": "Medieval",
+            "When": {
+                "OxidizerSprite": "Medieval"
+            }
+        },
+        {
+            // Enable Elegant compatibility when manually selected
+            "Name": "OxidizerSpriteTheme",
+            "Value": "Elegant",
+            "When": {
+                "OxidizerSprite": "Elegant"
+            }
+        },
         // Manual and auto mod compatibility support
-        
         // Jasmine can be from Cornucopia - More Flowers (Extended Flowers), Wildflour's Atelier Goods - Forager, Quaint Living - Flower Garden 2
         {
             // Disable if set to Auto and none of the relevant mods are installed

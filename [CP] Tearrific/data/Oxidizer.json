@@ -5,7 +5,7 @@
             "LogName": "Load Oxidizer Tilesheet",
             "Action": "Load",
             "Target": "Mods/{{ModId}}/Oxidizer",
-            "FromFile": "assets/Oxidizer_{{OxidizerSprite}}.png"
+            "FromFile": "assets/Oxidizer_{{OxidizerSpriteTheme}}.png"
         },
         // Add Oxidizer Big Craftable
         {
@@ -70,7 +70,7 @@
                                     ]
                                 }
                             ],
-                            "MinutesUntilReady": 20
+                            "MinutesUntilReady": 100
                         },
                         {
                             "Id": "{{ModId}}_Loose_Leaf_White_Tea",
@@ -96,7 +96,7 @@
                                     ]
                                 }
                             ],
-                            "MinutesUntilReady": 20
+                            "MinutesUntilReady": 100
                         },
                         {
                             "Id": "{{ModId}}_Loose_Leaf_Oolong_Tea",
@@ -122,7 +122,7 @@
                                     ]
                                 }
                             ],
-                            "MinutesUntilReady": 20
+                            "MinutesUntilReady": 200
                         },
                         {
                             "Id": "{{ModId}}_Loose_Leaf_Black_Tea",
@@ -148,12 +148,12 @@
                                     ]
                                 }
                             ],
-                            "MinutesUntilReady": 20
+                            "MinutesUntilReady": 200
                         }
                     ],
                     "InvalidItemMessage": "{{i18n:Oxidizer.InvalidItemMessage}}",
                     "InvalidCountMessage": "{{i18n:Oxidizer.InvalidCountMessage}}",
-                    "ShowNextIndexWhileWorking": true,
+                    "ShowNextIndexWhileWorking": false,
                     "ShowNextIndexWhenReady": true,
                     "LoadEffects": [
                         {
@@ -163,18 +163,20 @@
                                     "Id": "steam",
                                     "Delay": 0
                                 }
-                            ]
+                            ],
+                            "Frames": [ 2, 3 ],
+                            "Interval": 100
                         }
-                    ]
-                    /*"WorkingEffects": [
+                    ],
+                    "WorkingEffects": [
                         {
                             "Condition": null,
-                            "Frames": [2],
-                            "Interval": 1000
+                            "Frames": [ 2, 3 ],
+                            "Interval": 100
                         }
                     ],
                     "WorkingEffectChance": 1,
-                    "WobbleWhileWorking": false*/
+                    "WobbleWhileWorking": false
                 }
             }
         }

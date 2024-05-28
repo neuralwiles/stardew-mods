@@ -2,11 +2,32 @@
   "Name": "Tearrific",
   "Author": "neuralwiles",
   "Version": "1.0.0",
-  "Description": "Adds more advanced tea processing to the game.",
+  "Description": "Adds more advanced tea processing to the game, along with many tea-related cooking recipes.",
   "UniqueID": "neuralwiles.Tearrific",
-  "UpdateKeys": [ "Nexus:" ],
+  "UpdateKeys": [ "Nexus:24436" ],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
-  "Dependencies": []
+  "Dependencies": [
+    {
+      "UniqueID": "Cornucopia.MoreCrops",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Cornucopia.MoreFlowers",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "wildflour.ateliercrops",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "PC.CP.QL.FlowerGarden2",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Rafseazz.RidgesideVillage",
+      "IsRequired": false
+    }
+  ]
 }
