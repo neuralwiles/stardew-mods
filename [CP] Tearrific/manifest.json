@@ -1,7 +1,7 @@
 {
   "Name": "Tearrific",
   "Author": "neuralwiles",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Description": "Adds more advanced tea processing to the game, along with many tea-related cooking recipes.",
   "UniqueID": "neuralwiles.Tearrific",
   "UpdateKeys": [ "Nexus:24436" ],

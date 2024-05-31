@@ -7,7 +7,7 @@
             "Target": "Data/CookingRecipes",
             "Entries": {
                 "Green Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1/10 10/614 1/null/{{i18n:Teas.Green.Name}}",
-                "{{ModId}}_Honey_Matcha_Latte": "{{ModId}}_Loose_Leaf_Green_Tea 1 340 1 -6 1/10 10/{{ModId}}_Honey_Matcha_Latte 1/null/{{i18n:Teas.MatchaLatte.Name}}",
+                "{{ModId}}_Honey_Matcha_Latte": "{{ModId}}_Loose_Leaf_Green_Tea 1 340 1 -6 1/10 10/{{ModId}}_Honey_Matcha_Latte 1/null/{{i18n:Teas.HoneyMatchaLatte.Name}}",
                 "{{ModId}}_Mango_Green_Tea": "{{ModId}}_Loose_Leaf_Green_Tea 1 834 1/10 10/{{ModId}}_Mango_Green_Tea 1/null/{{i18n:Teas.MangoGreen.Name}}"
             }
         },
