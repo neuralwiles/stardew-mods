@@ -1,0 +1,69 @@
+{
+    // Translations for Config
+    "Config.TroughRecolor.Name": "Trough Recolor",
+    "Config.TroughRecolor.Description": "Contrôle la recoloration intérieure de l'abreuvoir du Terrarium. Il existe une compatibilité automatique avec Earthy Recolor, More Elegant Town Interiors, Rustic Country Town Interiors et Vibrant Pastoral Recolor, mais vous pouvez également sélectionner une recoloration manuellement.",
+
+    // Translations for American Green Tree Frog
+    "American_Green_Tree_Frog.Name": "Rainette verte américaine",
+    "American_Green_Tree_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des fougères et du jade !",
+
+    // Translations for Red-Eyed Tree Frog
+    "Red-Eyed_Tree_Frog.Name": "Rainette aux yeux rouges",
+    "Red-Eyed_Tree_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des fougères et des rubis !",
+
+    // Translations for Clown Tree Frog
+    "Clown_Tree_Frog.Name": "Grenouille clownesque",
+    "Clown_Tree_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des fougères et des graines rares !",
+
+    // Translations for Blue Poison Dart Frog
+    "Blue_Poison_Dart_Frog.Name": "Grenouille empoisonnée bleue",
+    "Blue_Poison_Dart_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des champignons et des larmes gelées !",
+
+    // Translations for Golden Poison Dart Frog
+    "Golden_Poison_Dart_Frog.Name": "Grenouille fléchette dorée",
+    "Golden_Poison_Dart_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des champignons rouges et du minerai d'or !",
+
+    // Translations for Strawberry Poison Dart Frog
+    "Strawberry_Poison_Dart_Frog.Name": "Grenouille-fraise",
+    "Strawberry_Poison_Dart_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des champignons rouges et des fraises !",
+
+    // Translations for Amazonian Poison Dart Frog
+    "Amazonian_Poison_Dart_Frog.Name": "Grenouille empoisonnée d'Amazonie",
+    "Amazonian_Poison_Dart_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des champignons rouges et de l'aquamarine !",
+
+    // Translations for Purple Fluorescent Frog
+    "Purple_Fluorescent_Frog.Name": "Grenouille fluorescente violette",
+    "Purple_Fluorescent_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des champignons violets et des améthystes !",
+
+    // Translations for Fire-Bellied Toad
+    "Fire-Bellied_Toad.Name": "Crapaud au ventre de feu",
+    "Fire-Bellied_Toad.Description": "Ces amis amphibiens ingénieux trouveront pour vous des quartz-de-feu et des rubis !",
+
+    // Translations for Pale Frog
+    "Pale_Frog.Name": "Grenouille pâle",
+    "Pale_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des cristaux de terre et des graines rares !",
+
+    // Translations for Northern Glass Frog
+    "Northern_Glass_Frog.Name": "Grenouille de verre du Nord",
+    "Northern_Glass_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des quartz et des émeraudes !",
+
+    // Translations for Desert Rain Frog
+    "Desert_Rain_Frog.Name": "Grenouille de pluie du désert",
+    "Desert_Rain_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous des fruits de cactus et des coquilles arc-en-ciel !",
+
+    // Translations for Vietnamese Mossy Frog
+    "Vietnamese_Mossy_Frog.Name": "Grenouille moussue vietnamienne",
+    "Vietnamese_Mossy_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous de la mousse pour vous !",
+
+    // Translations for Amazon Milk Frog
+    "Amazon_Milk_Frog.Name": "Grenouille de lait d'Amazonie",
+    "Amazon_Milk_Frog.Description": "Ces amis amphibiens ingénieux trouveront pour vous du lait pour vous !",
+
+    // Translations for Terrarium
+    "Terrarium.Name": "Terrarium",
+    "Terrarium.Description": "Fournit un environnement sain pour élever des reptiles et des amphibiens.",
+
+    // Translations for Big Terrarium
+    "Big_Terrarium.Name": "Grand Terrarium",
+    "Big_Terrarium.Description": "Fournit un environnement sain pour élever des reptiles et des amphibiens."
+}
