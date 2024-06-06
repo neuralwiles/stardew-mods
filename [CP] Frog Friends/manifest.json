@@ -1,7 +1,7 @@
 {
     "Name": "Frog Friends",
     "Author": "neuralwiles",
-    "Version": "3.0.2",
+    "Version": "3.0.3",
     "Description": "Adds a variety of frog friends for your farm. Created for SDV 1.6.",
     "UniqueID": "neuralwiles.FrogFriends",
     "UpdateKeys": [ "Nexus:20657" ],
