@@ -1,0 +1,147 @@
+{
+    // Translations for Config
+    "Config.Section.General.Name": "Général",
+
+    "Config.ExcludeFromPerfection.Name": "Exclure de la perfection",
+    "Config.ExcludeFromPerfection.Description": "Excluez les éléments ajoutés par ce mod des exigences de perfection et d'expédition complète.",
+
+    "Config.OxidizerSprite.Name": "Thème visuel (oxydeur)",
+    "Config.OxidizerSprite.Description": "Choisir quel modèle visuel (sprite) utiliser pour l'Oxidizer : jeu de base, Gwen’s Medieval Craftables ou Elegant Craftables. Choisir \"Auto\" sélectionnera automatiquement le bon modèle à utiliser en fonction de ce que vous avez installé.",
+
+    "Config.UseNewGreenTeaSprite.Name": "Nouveau modèle de thé vert",
+    "Config.UseNewGreenTeaSprite.Description": "Remplacez l’image pour le thé vert du jeu de base par celui proposé par ce mod.",
+
+    "Config.Section.ModCompatibility.Name": "Compatibilité des mods",
+    "Config.Section.ModCompatibility.Description": "Options de compatibilité pour les mods de cultures et de fleurs personnalisés.",
+
+    "Config.JasmineCompatibility.Name": "Compatibilité (jasmin)",
+    "Config.JasmineCompatibility.Description": "Choisir quel type de jasmin sera utilisé comme ingrédient. Choisir \"Auto\" sélectionnera automatiquement le mod à utiliser en fonction de ce que vous avez installé ; si plusieurs mods sont installés, le premier de la liste sera choisi. Choisir « Aucun » désactive la recette au jasmin.",
+
+    "Config.RaspberryCompatibility.Name": "Compatibilité (framboise)",
+    "Config.RaspberryCompatibility.Description": "Choisir quel type de framboise sera utilisé comme ingrédient. Choisir \"Auto\" sélectionnera automatiquement le mod à utiliser en fonction de ce que vous avez installé ; si plusieurs mods sont installés, le premier de la liste sera choisi. Choisir « Aucun » désactive la recette à la framboise.",
+
+    "Config.PeonyCompatibility.Name": "Compatibilité (pivoine)",
+    "Config.PeonyCompatibility.Description": "Choisir quel type de pivoine sera utilisé comme ingrédient. Choisir \"Auto\" sélectionnera automatiquement le mod à utiliser en fonction de ce que vous avez installé ; si plusieurs mods sont installés, le premier de la liste sera choisi. Choisir « Aucun » désactive la recette à la pivoine.",
+
+    "Config.LemonCompatibility.Name": "Compatibilité (citron)",
+    "Config.LemonCompatibility.Description": "Choisir quel type de citron sera utilisé comme ingrédient. Choisir \"Auto\" sélectionnera automatiquement le mod à utiliser en fonction de ce que vous avez installé ; si plusieurs mods sont installés, le premier de la liste sera choisi. Choisir « Aucun » désactive la recette au citron.",
+
+    "Config.VanillaCompatibility.Name": "Compatibilité (vanille)",
+    "Config.VanillaCompatibility.Description": "Choisir quel type de vanille sera utilisé comme ingrédient. Choisir \"Auto\" sélectionnera automatiquement le mod à utiliser en fonction de ce que vous avez installé ; si plusieurs mods sont installés, le premier de la liste sera choisi. Choisir « Aucun » désactive la recette à la vanille.",
+
+    "Config.CinnamonCompatibility.Name": "Compatibilité (cannelle)",
+    "Config.CinnamonCompatibility.Description": "Choisir quel type de cannelle sera utilisé comme ingrédient. Choisir \"Auto\" sélectionnera automatiquement le mod à utiliser en fonction de ce que vous avez installé ; si plusieurs mods sont installés, le premier de la liste sera choisi. Choisir « Aucun » désactive la recette à la cannelle.",
+
+    "Config.LavenderCompatibility.Name": "Compatibilité (lavande)",
+    "Config.LavenderCompatibility.Description": "Choisir quel type de lavande sera utilisé comme ingrédient. Choisir \"Auto\" sélectionnera automatiquement le mod à utiliser en fonction de ce que vous avez installé ; si plusieurs mods sont installés, le premier de la liste sera choisi. Choisir « Aucun » désactive la recette à la lavande.",
+
+    "Config.RoseCompatibility.Name": "Compatibilité (roses)",
+    "Config.RoseCompatibility.Description": "Choisir quel type de rose sera utilisée comme ingrédient. Choisir \"Auto\" sélectionnera automatiquement le mod à utiliser en fonction de ce que vous avez installé ; si plusieurs mods sont installés, le premier de la liste sera choisi. Choisir « Aucun » désactive la recette à la rose.",
+
+    // Translations for Oxidizer
+    "Oxidizer.Name": "Oxydant",
+    "Oxidizer.Description": "Utilisé pour oxyder les feuilles de thé en divers thés en feuilles.",
+    "Oxidizer.InvalidItemMessage": "Cela ne peut pas être oxydé.",
+    "Oxidizer.InvalidCountMessage": "Plus d'ingrédients sont nécessaires.",
+
+    // Translations for Oxidizer Recipe Mail
+    "OxidizerRecipeMail.Name": "Traitez vos feuilles de thé !",
+    "OxidizerRecipeMail.Text": "@, ^^Je sais que je t’ai écrit sur la façon de cultiver des théiers dans ta ferme, mais j'ai oublié de mentionner que tu peux également transformer tes feuilles de thé en différentes sortes de thé en feuilles.^^Le thé en feuilles peut être ensuite infusé dans toutes sortes de boissons savoureuses, alors essaye-les ! Voici une recette d'oxydant pour t’aider à démarrer.^^ -Caroline",
+
+    // Translations for Loose Leaf Teas
+    "LooseLeaf.Green.Name": "Thé vert en feuilles",
+    "LooseLeaf.Green.Description": "Le type de thé le moins transformé, contenant le plus d’antioxydants.",
+
+    "LooseLeaf.White.Name": "Thé blanc en feuilles",
+    "LooseLeaf.White.Description": "Un thé délicat et légèrement transformé à base de jeunes bourgeons de thé.",
+
+    "LooseLeaf.Oolong.Name": "Thé Oolong en feuilles",
+    "LooseLeaf.Oolong.Description": "Un thé partiellement oxydé qui peut avoir une grande variété de saveurs en fonction de la préparation et du degré d'oxydation.",
+
+    "LooseLeaf.Black.Name": "Thé noir en feuilles",
+    "LooseLeaf.Black.Description": "Un thé entièrement oxydé avec une saveur robuste et une teneur élevée en caféine.",
+
+    // Translations for Teas
+    "Teas.Green.Name": "Thé vert",
+
+    "Teas.HoneyMatchaLatte.Name": "Matcha Latte au miel",
+    "Teas.HoneyMatchaLatte.Description": "Un délicieux mélange crémeux de thé vert matcha, de miel et de lait.",
+
+    "Teas.MangoGreen.Name": "Thé vert à la mangue",
+    "Teas.MangoGreen.Description": "Thé vert mélangé au goût tropical de la mangue.",
+
+    "Teas.CherryBlossomGreen.Name": "Thé vert aux fleurs de cerisier",
+    "Teas.CherryBlossomGreen.Description": "Thé vert infusé de pétales de fleurs de cerisier. Un avant-goût de printemps !",
+
+    "Teas.JasmineGreen.Name": "Thé vert au jasmin",
+    "Teas.JasmineGreen.Description": "Un mélange parfumé et réconfortant de thé vert et de jasmin.",
+
+    "Teas.LycheeGreen.Name": "Thé vert au litchi",
+    "Teas.LycheeGreen.Description": "Thé vert infusé au goût doux et complexe du litchi.",
+
+    "Teas.YuzuGreen.Name": "Thé vert au Yuzu",
+    "Teas.YuzuGreen.Description": "Citronné et éclatant, ce thé vert est infusé d'écorces de yuzu séchées.",
+
+    "Teas.White.Name": "Thé blanc",
+    "Teas.White.Description": "Un thé délicat et rare à faible teneur en caféine.",
+
+    "Teas.CoconutCreamWhite.Name": "Thé blanc à la crème de coco",
+    "Teas.CoconutCreamWhite.Description": "Doux et attrayant, ce mélange de thé blanc tropical est très réconfortant.",
+
+    "Teas.PomegranateWhite.Name": "Thé blanc à la grenade",
+    "Teas.PomegranateWhite.Description": "Un thé blanc infusé de la saveur vive et acidulée de la grenade fraîche.",
+
+    "Teas.RaspberryWhite.Name": "Thé blanc à la framboise",
+    "Teas.RaspberryWhite.Description": "Ce thé allie le goût délicat du thé blanc à un éclat de saveur acidulée de framboise.",
+
+    "Teas.PeonyWhite.Name": "Thé blanc à la pivoine",
+    "Teas.PeonyWhite.Description": "Un thé blanc parfumé et onctueux à l'arôme léger et floral.",
+
+    "Teas.PearWhite.Name": "Thé blanc à la poire",
+    "Teas.PearWhite.Description": "Une ode fruitée remplie aux saveurs légères et croquantes des poires fraîches.",
+
+    "Teas.GrapefruitWhite.Name": "Thé blanc au pamplemousse",
+    "Teas.GrapefruitWhite.Description": "Thé blanc égayé par les notes claires d'agrumes du pamplemousse.",
+
+    "Teas.Oolong.Name": "Thé oolong",
+    "Teas.Oolong.Description": "Réputé pour sa floralité délicate, son côté terreux nuancé et sa douceur agréable.",
+
+    "Teas.OolongMilk.Name": "Thé au lait Oolong",
+    "Teas.OolongMilk.Description": "Ce thé au lait classique est sucré, crémeux et délicieux.",
+
+    "Teas.PeachOolong.Name": "Thé Oolong à la pêche",
+    "Teas.PeachOolong.Description": "Ce mélange de thé oolong a une riche saveur boisée avec des notes de pêches mûres et de miel sucré.",
+
+    "Teas.LemonGingerOolong.Name": "Thé Oolong citron/gingembre",
+    "Teas.LemonGingerOolong.Description": "Délicieux et apaisant, ce thé est parfait lorsque vous ne vous sentez pas bien.",
+
+    "Teas.CreamsicleOolong.Name": "Thé Oolong à la crème glacée",
+    "Teas.CreamsicleOolong.Description": "Ce mélange oolong est infusé de saveurs nostalgiques d’orange et de vanille rappelant une friandise préférée de son enfance.",
+
+    "Teas.PapayaOolong.Name": "Thé Oolong à la papaye",
+    "Teas.PapayaOolong.Description": "Ce mélange fruité évoque les saveurs des îles pour un régal tropical à tout moment de l'année.",
+
+    "Teas.AppleCinnamonOolong.Name": "Thé Oolong pomme/cannelle",
+    "Teas.AppleCinnamonOolong.Description": "La boisson parfaite pour se détendre lors d’une froide journée d’hiver !",
+
+    "Teas.Black.Name": "Thé noir",
+    "Teas.Black.Description": "Sa saveur est plus forte que celle des autres thés et sa teneur en caféine est adaptée. Un excellent choix !",
+
+    "Teas.TaroBlackMilk.Name": "Thé au lait noir au taro",
+    "Teas.TaroBlackMilk.Description": "Un mélange classique et légèrement sucré de racine de taro et de thé au lait noir.",
+
+    "Teas.MapleSugarBlack.Name": "Thé noir au sucre d'érable",
+    "Teas.MapleSugarBlack.Description": "Les saveurs réconfortantes et sucrées de l’automne.",
+
+    "Teas.StrawberryBlack.Name": "Thé noir aux fraises",
+    "Teas.StrawberryBlack.Description": "Ce thé noir présente le goût naturellement sucré des fraises. Un peu de printemps toute l'année !",
+
+    "Teas.LavenderBlack.Name": "Thé noir à la lavande",
+    "Teas.LavenderBlack.Description": "Calmant et aromatique, ce thé noir mélangé à la lavande apaisera vos soucis.",
+
+    "Teas.PassionFruitBlack.Name": "Thé noir aux fruits de la passion",
+    "Teas.PassionFruitBlack.Description": "Un mélange subtilement sucré et acidulé de thé noir et de fruit de la passion pour vous plonger dans un état d'esprit tropical.",
+
+    "Teas.RosePetalBlack.Name": "Thé noir aux pétales de rose",
+    "Teas.RosePetalBlack.Description": "Un mélange romantique et gourmand de thé noir fort et de pétales de rose parfumés."
+}

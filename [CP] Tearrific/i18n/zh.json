@@ -1,0 +1,147 @@
+{
+    // Translations for Config
+    "Config.Section.General.Name": "一般情况",
+
+    "Config.ExcludeFromPerfection.Name": "排除完美",
+    "Config.ExcludeFromPerfection.Description": "本修改器添加的项目不包括在完善和全部装运的要求中.",
+
+    "Config.OxidizerSprite.Name": "氧化剂精灵",
+    "Config.OxidizerSprite.Description": "氧化炉使用哪种精灵：与虚幻游戏匹配的精灵，与格温的中世纪可制作精灵匹配的精灵，还是与优雅可制作精灵匹配的精灵。选择 \"Auto\" will auto-select which sprite to use based on what you have installed.",
+
+    "Config.UseNewGreenTeaSprite.Name": "使用新绿茶精灵",
+    "Config.UseNewGreenTeaSprite.Description": "将基本游戏中的绿茶精灵替换为与此修改器匹配的精灵.",
+
+    "Config.Section.ModCompatibility.Name": "模块兼容性",
+    "Config.Section.ModCompatibility.Description": "自定义裁剪和花朵模式的兼容性选项.",
+
+    "Config.JasmineCompatibility.Name": "茉莉花兼容性",
+    "Config.JasmineCompatibility.Description": "使用哪种作物模式的茉莉花作为配料。选择 \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the jasmine recipe.",
+
+    "Config.RaspberryCompatibility.Name": "覆盆子兼容",
+    "Config.RaspberryCompatibility.Description": "用哪种作物模式的覆盆子作为配料. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the raspberry recipe.",
+
+    "Config.PeonyCompatibility.Name": "牡丹的兼容性",
+    "Config.PeonyCompatibility.Description": "使用哪种作物模式的牡丹作为原料. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the peony recipe.",
+
+    "Config.LemonCompatibility.Name": "柠檬兼容性",
+    "Config.LemonCompatibility.Description": "Which crop mod's lemon to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the lemon recipe.",
+
+    "Config.VanillaCompatibility.Name": "香草兼容性",
+    "Config.VanillaCompatibility.Description": "Which crop mod's vanilla to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the vanilla recipe.",
+
+    "Config.CinnamonCompatibility.Name": "肉桂兼容性",
+    "Config.CinnamonCompatibility.Description": "Which crop mod's cinnamon to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the cinnamon recipe.",
+
+    "Config.LavenderCompatibility.Name": "薰衣草的兼容性",
+    "Config.LavenderCompatibility.Description": "Which crop mod's lavender to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the lavender recipe.",
+
+    "Config.RoseCompatibility.Name": "玫瑰的兼容性",
+    "Config.RoseCompatibility.Description": "Which crop mod's rose to use as an ingredient. Choosing \"Auto\" will auto-select which mod to use based on what you have installed; if multiple mods are installed, the first in the list will be chosen. Choosing \"None\" disables the rose recipe.",
+
+    // Translations for Oxidizer
+    "Oxidizer.Name": "氧化剂",
+    "Oxidizer.Description": "用于将茶叶氧化成各种散叶茶.",
+    "Oxidizer.InvalidItemMessage": "这不能被氧化.",
+    "Oxidizer.InvalidCountMessage": "需要更多原料.",
+
+    // Translations for Oxidizer Recipe Mail
+    "OxidizerRecipeMail.Name": "加工您的茶叶!",
+    "OxidizerRecipeMail.Text": "@, ^^我知道我在信中向你们介绍了如何在农场里种植茶树，但我忘了说，你们还可以将茶叶加工成各种散叶茶. ^^散叶茶可以冲泡成各种美味饮品，不妨一试！下面是一份氧化剂配方，供您参考.^^ - Caroline",
+
+    // Translations for Loose Leaf Teas
+    "LooseLeaf.Green.Name": "散叶绿茶",
+    "LooseLeaf.Green.Description": "加工最少的茶叶，含有最多的抗氧化剂.",
+
+    "LooseLeaf.White.Name": "散叶白茶",
+    "LooseLeaf.White.Description": "用幼嫩茶芽制成的细腻、轻度加工的茶叶.",
+
+    "LooseLeaf.Oolong.Name": "散叶乌龙茶",
+    "LooseLeaf.Oolong.Description": "一种部分氧化的茶，根据制备方法和氧化程度的不同，可以有多种口味.",
+
+    "LooseLeaf.Black.Name": "散叶红茶",
+    "LooseLeaf.Black.Description": "完全氧化的茶叶，味道浓郁，咖啡因含量高.",
+
+    // Translations for Teas
+    "Teas.Green.Name": "绿茶",
+
+    "Teas.HoneyMatchaLatte.Name": "蜂蜜抹茶拿铁",
+    "Teas.HoneyMatchaLatte.Description": "由抹茶绿茶、蜂蜜和牛奶混合而成的美味奶茶.",
+
+    "Teas.MangoGreen.Name": "芒果绿茶",
+    "Teas.MangoGreen.Description": "绿茶混合芒果的热带风味.",
+
+    "Teas.CherryBlossomGreen.Name": "樱花绿茶",
+    "Teas.CherryBlossomGreen.Description": "用樱花花瓣浸泡的绿茶。春天的味道!",
+
+    "Teas.JasmineGreen.Name": "茉莉绿茶",
+    "Teas.JasmineGreen.Description": "绿茶和茉莉花的混合香气，让人倍感舒适.",
+
+    "Teas.LycheeGreen.Name": "荔枝绿茶",
+    "Teas.LycheeGreen.Description": "绿茶浸泡在香甜复杂的荔枝香中.",
+
+    "Teas.YuzuGreen.Name": "柚子绿茶",
+    "Teas.YuzuGreen.Description": "这款绿茶加入了干柚子皮，柑橘味浓郁，口感明亮.",
+
+    "Teas.White.Name": "白茶",
+    "Teas.White.Description": "咖啡碱含量低，是一种精致而稀有的茶叶.",
+
+    "Teas.CoconutCreamWhite.Name": "椰奶白茶",
+    "Teas.CoconutCreamWhite.Description": "这款热带白茶温和宜人，让人倍感舒适。.",
+
+    "Teas.PomegranateWhite.Name": "石榴白茶",
+    "Teas.PomegranateWhite.Description": "浸泡在新鲜石榴中的白茶，口味酸甜明亮.",
+
+    "Teas.RaspberryWhite.Name": "覆盆子白茶",
+    "Teas.RaspberryWhite.Description": "这款茶既有白茶的细腻口感，又有浓郁的覆盆子风味。.",
+
+    "Teas.PeonyWhite.Name": "牡丹白茶",
+    "Teas.PeonyWhite.Description": "清香柔滑的白茶，带有淡淡的花香.",
+
+    "Teas.PearWhite.Name": "雪梨白茶",
+    "Teas.PearWhite.Description": "一曲充满水果香味的颂歌，颂扬新鲜梨子的清脆口味.",
+
+    "Teas.GrapefruitWhite.Name": "葡萄柚白茶",
+    "Teas.GrapefruitWhite.Description": "柚子的柑橘香使白茶更加明亮.",
+
+    "Teas.Oolong.Name": "乌龙茶",
+    "Teas.Oolong.Description": "以细腻的花香、微妙的泥土气息和怡人的甜味而闻名于世.",
+
+    "Teas.OolongMilk.Name": "乌龙奶茶",
+    "Teas.OolongMilk.Description": "这款经典奶茶香甜、奶味浓郁、美味可口.",
+
+    "Teas.PeachOolong.Name": "桃子乌龙茶",
+    "Teas.PeachOolong.Description": "这款乌龙茶混合茶具有浓郁的木香，并带有成熟桃子和甜蜂蜜的味道。.",
+
+    "Teas.LemonGingerOolong.Name": "柠檬姜汁乌龙茶",
+    "Teas.LemonGingerOolong.Description": "这款茶既美味又舒缓，非常适合心情不好时饮用.",
+
+    "Teas.CreamsicleOolong.Name": "霜冻乌龙茶",
+    "Teas.CreamsicleOolong.Description": "这款乌龙茶混合了怀旧的橙子和香草味道，让人想起儿时最爱的点心。.",
+
+    "Teas.PapayaOolong.Name": "木瓜乌龙茶",
+    "Teas.PapayaOolong.Description": " 这款充满水果香味的混合饮料唤起了人们对岛屿风味的向往，是一年中任何时候都能品尝到的热带美食.",
+
+    "Teas.AppleCinnamonOolong.Name": "苹果肉桂乌龙茶",
+    "Teas.AppleCinnamonOolong.Description": "寒冷冬日里蜷缩在一起的完美饮品!",
+
+    "Teas.Black.Name": "黑茶",
+    "Teas.Black.Description": "比其他茶叶味道更浓，咖啡因含量也更高。提神的好帮手!",
+
+    "Teas.TaroBlackMilk.Name": "香芋红奶茶",
+    "Teas.TaroBlackMilk.Description": "经典、微甜的芋根与红奶茶混合物.",
+
+    "Teas.MapleSugarBlack.Name": "枫糖红茶",
+    "Teas.MapleSugarBlack.Description": "秋天舒适甜美的味道.",
+
+    "Teas.StrawberryBlack.Name": "草莓红茶",
+    "Teas.StrawberryBlack.Description": "这款红茶具有草莓的天然甜味。四季如春!",
+
+    "Teas.LavenderBlack.Name": "薰衣草红茶",
+    "Teas.LavenderBlack.Description": "这款红茶与薰衣草混合在一起，具有镇静和芳香的作用，能舒缓您的忧虑.",
+
+    "Teas.PassionFruitBlack.Name": "百香果红茶",
+    "Teas.PassionFruitBlack.Description": "红茶与百香果的微妙酸甜混合，让您沉浸在热带风情之中.",
+
+    "Teas.RosePetalBlack.Name": "玫瑰花瓣红茶",
+    "Teas.RosePetalBlack.Description": "浓郁红茶与芬芳玫瑰花瓣的完美融合，浪漫迷人."
+}
