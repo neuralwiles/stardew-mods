@@ -28,7 +28,18 @@
 			"When": {
 				"ChangeIntoSwimsuit": "false"
 			}
-		}
+		},
+		{
+			"Name": "VanillaFarmhouse",
+			"Value": "true"
+		},
+		{
+			"Name": "VanillaFarmhouse",
+			"Value": "false",
+			"When": {
+				"HasMod": "Asterisk555.CP.BiggerFarmhouse, mabelsyrup.farmhouse"
+			}
+		},
 	],
 	"Changes": [
 		// FarmHouse Changes
@@ -37,7 +48,8 @@
 			"Target": "Maps/FarmHouse",
 			"FromFile": "Assets/Extension/VanillaFH0_1.tmx",
 			"When": {
-				"StarterFarmHouseKitchen": "false"
+				"StarterFarmHouseKitchen": "false",
+				"VanillaFarmhouse": "true",
 			}
 		},
 		{
@@ -57,7 +69,8 @@
 				"Height": 9
 			},
 			"When": {
-				"StarterFarmHouseKitchen": "false"
+				"StarterFarmHouseKitchen": "false",
+				"VanillaFarmhouse": "true",
 			}
 		},
 		{
@@ -77,7 +90,8 @@
 				"Height": 1
 			},
 			"When": {
-				"StarterFarmHouseKitchen": "false"
+				"StarterFarmHouseKitchen": "false",
+				"VanillaFarmhouse": "true",
 			}
 		},
 		{
@@ -85,7 +99,8 @@
 			"Target": "Maps/FarmHouse",
 			"FromFile": "Assets/Extension/VanillaFH0_2.tmx",
 			"When": {
-				"StarterFarmHouseKitchen": "true"
+				"StarterFarmHouseKitchen": "true",
+				"VanillaFarmhouse": "true",
 			}
 		},
 		{
@@ -105,7 +120,8 @@
 				"Height": 9
 			},
 			"When": {
-				"StarterFarmHouseKitchen": "true"
+				"StarterFarmHouseKitchen": "true",
+				"VanillaFarmhouse": "true",
 			}
 		},
 		{
@@ -125,7 +141,8 @@
 				"Height": 1
 			},
 			"When": {
-				"StarterFarmHouseKitchen": "true"
+				"StarterFarmHouseKitchen": "true",
+				"VanillaFarmhouse": "true",
 			}
 		},
 		// FarmHouse1 Changes
@@ -133,6 +150,9 @@
 			"Action": "EditMap",
 			"Target": "Maps/FarmHouse1",
 			"FromFile": "Assets/Extension/VanillaFH1_m.tmx",
+			"When": {
+				"VanillaFarmhouse": "true"
+			},
 		},
 		{
 			"Action": "EditMap",
@@ -149,7 +169,10 @@
 				"Y": 1,
 				"Width": 6,
 				"Height": 9
-			}
+			},
+			"When": {
+				"VanillaFarmhouse": "true"
+			},
 		},
 		{
 			"Action": "EditMap",
@@ -166,13 +189,19 @@
 				"Y": 9,
 				"Width": 6,
 				"Height": 1
-			}
+			},
+			"When": {
+				"VanillaFarmhouse": "true"
+			},
 		},
 		// FarmHouse1 + Marriage Changes
 		{
 			"Action": "EditMap",
 			"Target": "Maps/FarmHouse1_marriage",
 			"FromFile": "Assets/Extension/VanillaFH1_marriage.tmx",
+			"When": {
+				"VanillaFarmhouse": "true"
+			},
 		},
 		{
 			"Action": "EditMap",
@@ -189,7 +218,10 @@
 				"Y": 12,
 				"Width": 6,
 				"Height": 9
-			}
+			},
+			"When": {
+				"VanillaFarmhouse": "true"
+			},
 		},
 		{
 			"Action": "EditMap",
@@ -206,6 +238,9 @@
 				"Y": 20,
 				"Width": 6,
 				"Height": 1
+			},
+			"When": {
+				"VanillaFarmhouse": "true"
 			},
 		},
 		// FarmHouse2 Added Southern Room Changes
@@ -224,7 +259,10 @@
                 "Y": 32,
                 "Width": 20,
                 "Height": 14
-            }
+            },
+			"When": {
+				"VanillaFarmhouse": "true"
+			},
 		},
 		{
 			"Action": "EditMap",
@@ -241,7 +279,10 @@
                 "Y": 32,
                 "Width": 20,
                 "Height": 14
-            }
+            },
+			"When": {
+				"VanillaFarmhouse": "true"
+			},
 		},
 		{
 			"Action": "EditMap",
@@ -257,7 +298,10 @@
 				"Y": 34,
 				"Width": 6,
 				"Height": 9
-			}
+			},
+			"When": {
+				"VanillaFarmhouse": "true"
+			},
 		},
 		{
 			"Action": "EditMap",
@@ -274,7 +318,73 @@
 				"Y": 42,
 				"Width": 6,
 				"Height": 1
+			},
+			"When": {
+				"VanillaFarmhouse": "true"
+			},
+		},
+		
+		//Bigger Farmhouse Map Changes
+		{ 
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse, Maps/FarmHouse1, Maps/FarmHouse1_marriage",
+			"FromFile": "Assets/Baths/A5BRS_{{DecorationStyle}}_{{EnterBathroomFrom}}.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 9 },
+			"ToArea": { "X": 1, "Y": 18, "Width": 6, "Height": 9 },
+			"When": {
+				"HasMod |contains=Asterisk555.CP.BiggerFarmhouse": true,
+			},
+		},
+		{ 
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse, Maps/FarmHouse1, Maps/FarmHouse1_marriage",
+			"FromFile": "Assets/Extension/BiggerFarmHouse_bath_front.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 1 },
+			"ToArea": { "X": 1, "Y": 26, "Width": 6, "Height": 1 },
+			"When": {
+				"HasMod |contains=Asterisk555.CP.BiggerFarmhouse": true,
+			},
+		},
+		{ 
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2, Maps/FarmHouse2_marriage",
+			"FromFile": "Assets/Baths/A5BRS_{{DecorationStyle}}_{{EnterBathroomFrom}}.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 9 },
+			"ToArea": { "X": 16, "Y": 37, "Width": 6, "Height": 9 },
+			"When": {
+				"HasMod |contains=Asterisk555.CP.BiggerFarmhouse": true,
 			}
-		}
+		},
+		{ 
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse_Cellar",
+			"FromFile": "Assets/Baths/A5BRS_{{DecorationStyle}}_{{EnterBathroomFrom}}.tmx",
+			"FromArea": { "X": 2, "Y": 0, "Width": 4, "Height": 3 },
+			"ToArea": { "X": 19, "Y": 37, "Width": 4, "Height": 3 },
+			"When": {
+				"HasMod |contains=Asterisk555.CP.BiggerFarmhouse": true,
+			}
+		},
+		{ 
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse2, Maps/FarmHouse2_marriage",
+			"FromFile": "Assets/Extension/BiggerFarmHouse_bath_front.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 1 },
+			"ToArea": { "X": 16, "Y": 45, "Width": 6, "Height": 1 },
+			"When": {
+				"HasMod |contains=Asterisk555.CP.BiggerFarmhouse": true,
+			}
+		},
+		{
+			"LogName": "Map Fix",
+			"Action": "EditMap",
+			"Target": "Maps/FarmHouse_Cellar",
+			"FromFile": "Assets/Extension/BiggerFarmHouse_Divider.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 3 },
+			"ToArea": { "X": 22, "Y": 37, "Width": 1, "Height": 3 },
+			"When": {
+				"HasMod |contains=Asterisk555.CP.BiggerFarmhouse": true,
+			}
+		},
 	]
 }
